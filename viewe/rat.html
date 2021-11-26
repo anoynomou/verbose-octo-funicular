@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="socket.io/socket.io.js" ></script>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #455969;
+        }
+        #monitor{
+            width: 90vw;
+            height: 60vh;
+            background-color: rgb(87, 81, 97);
+            align-self: center;
+            border-radius: 20px;
+            padding: 15px;
+            font-size: 1.3rem;
+            overflow-y: auto;
+            color: rgb(243, 243, 231);
+            border: 6px double #36a4ff;
+        }
+        #inp{
+            background-color: #455969;
+            border: 3px solid #36a4ff;
+            border-radius: 10px;
+            padding: 5px;
+            width: 90vw;
+            align-self: center;
+            margin-top: 15px;
+            color: aliceblue;
+        }
+        p{
+            width: 100%;
+            overflow-wrap: break-word;
+            background-color: rgb(3, 3, 3);
+            padding: 2px;
+            border-radius: 5px;
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="monitor">
+         
+         <p>resisaj oasdokoas ad</p>
+         <p>resisaj oasdokoas ad</p>
+ 
+    </div>
+    <input  id="inp" placeholder="enter command">
+
+</body>
+<script >
+  var socket =io('/')
+var commands = document.getElementById("inp");
+var monitor = document.getElementById("monitor");
+
+commands.addEventListener("keypress", function(event) {
+    
+
+    if (event.keyCode == 13){
+        
+        socket.emit("msg",commands.value.toString())
+        commands.value = ""
+        
+    }
+
+});
+socket.on('msg',data=>{
+        addData(data)
+})
+
+function addData(data){
+   var myPelement = document.createElement("p")
+   myPelement.innerText = data
+   monitor.appendChild(myPelement);
+}
+    
+
+</script>
+
+</html>

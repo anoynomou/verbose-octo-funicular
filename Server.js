@@ -13,6 +13,11 @@ App.get('/',(req,res)=>{
     
 })
 
+App.get('/rat',(req,res)=>{
+    res.sendFile(path.join(__dirname,"\ viewe".trim(),"\ rat.html".trim()))
+    
+})
+
 socket.on('connection',Socket=>{
     console.log(Socket.id)
 
@@ -27,9 +32,12 @@ socket.on('connection',Socket=>{
          console.log(roomid)
          
          Socket.join(roomid)
-        
+     })
 
 
+     Socket.on("msg",(data)=>{
+         console.log(data)
+        Socket.broadcast.emit("msg", data);
      })
 
     // socket.emit("new message","hi i am server")
