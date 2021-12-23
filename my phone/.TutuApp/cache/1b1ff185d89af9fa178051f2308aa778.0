@@ -1,0 +1,18 @@
+http://face1.feng.com/avatar.php?uid=15968568
+GET
+0
+HTTP/1.1 301 Moved Permanently
+13
+Server: nws_ocmid_hy
+Connection: keep-alive
+Date: Thu, 12 Jul 2018 09:27:01 GMT
+Cache-Control: must-revalidate, no-cache
+Last-Modified: Thu, 12 Jul 2018 17:27:01 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Location: http://face.weiphone.net/images/noavatar_middle.jpg
+Set-Cookie: SERVERID=104882b574c91d7c8db6fe3997326597|1531387621|1531387621;Path=/
+X-Daa-Tunnel: hop_count=2
+X-NWS-LOG-UUID: 20a6d011-c9ae-4559-9f74-6b0e957d9001 50f4acfe623686ce8d64cceee1db658f
+OkHttp-Sent-Millis: 1531387608990
+OkHttp-Received-Millis: 1531387609586

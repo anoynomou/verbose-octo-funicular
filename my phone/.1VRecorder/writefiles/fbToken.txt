@@ -1,0 +1,21 @@
+
+*************************************************************
+Current device info:
+
+osVer:Android 6.0 Marshmallow(23)
+appVer:3.2.3(53)
+phoneModel:i10(i10)
+language:en-US
+screen w*h:[1280*720]
+curCpuName:ARMv7 Processor rev 3 (v7l)
+command:armeabi-v7a
+maxCpu:1.3GHZ(4 cores) --- minCpu:604MHZ --- curCpu:1.1GHZ
+RamAllMem:1.93GB --- RamAvaiMem:337.54MB --- AppMaxRam:256.0MB
+RomType:Internal Storage --- RomTotalSize:11.14GB --- RomFreeSize:2.49GB
+phoneNet=opName:Robi
+netWork type:wifi
+phone type:GSM
+
+
+*************************************************************
+2019-12-02 08:54:41:640   [@ca92bd0]flKAQgnD3AI:APA91bE4jBahjwHR2x30dnrxi1DL7Yn4e7NFJayNTfallFp4RJLj7l0d2MfjZp19oq8qRTWLLl9yzWQ0_xpRrzTScoxzOCUk-Dq2VadG16IhCitHWM5wtJXXYTZbHjzkN4pveJY8DHHq

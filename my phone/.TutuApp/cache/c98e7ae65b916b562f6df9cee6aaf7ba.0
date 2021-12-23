@@ -1,0 +1,16 @@
+http://passport.tutuapp.com/ucenter/avatar.php?uid=3000&randNum=415
+GET
+0
+HTTP/1.1 301 Moved Permanently
+11
+Date: Thu, 12 Jul 2018 09:25:57 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+cache-control: no-cache,must-revalidate
+Last-Modified: Thu, 12 Jul 2018 17:25:57 +0800
+Expires: Fri, 13 Jul 2018 17:25:57 +0800
+Location: http://passport.tutuapp.com/ucenter//data/avatar/000/00/30/00_avatar_middle.jpg?md5=7dd3cc930803c14e2bdf3123b8339e6d
+Set-Cookie: SERVERID=f9df0806c3b21aaa5be540438544fec4|1531387557|1531387557;Path=/
+OkHttp-Sent-Millis: 1531387545473
+OkHttp-Received-Millis: 1531387545975

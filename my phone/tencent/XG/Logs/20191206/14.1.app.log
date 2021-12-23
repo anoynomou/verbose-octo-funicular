@@ -1,0 +1,1063 @@
+W/2019-12-06 14:06:45.895 [main][Util] [4.32][com.dts.freefireth:xg_service_v4]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:06:45.906 [main][Util] [4.32][com.dts.freefireth:xg_service_v4]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+E/2019-12-06 14:06:45.927 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:startService failed, intent:Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.dts.freefireth/com.tencent.android.tpush.service.XGPushServiceV4 }, ex:android.content.ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+D/2019-12-06 14:06:46.010 [main][XGPushService] [4.32][com.dts.freefireth:xg_service_v4]:reportLastServiceState 
+D/2019-12-06 14:06:46.121 [Thread-575][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+V/2019-12-06 14:06:46.253 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:(ignore) running v4 service count 0
+I/2019-12-06 14:06:46.261 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+I/2019-12-06 14:06:46.272 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+V/2019-12-06 14:06:46.287 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:tryToKeepServiceAlive socketFinalName:17b8f414a85dd456a15585b41d7f686f03fff04496b00ca64380acef2def0ddee94f133e
+I/2019-12-06 14:06:46.298 [main][f] [4.32][com.dts.freefireth:xg_service_v4]:is xg_service
+I/2019-12-06 14:06:46.306 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:start as main service......
+I/2019-12-06 14:06:46.313 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:Service's first running at com.dts.freefireth version : 4.32
+I/2019-12-06 14:06:46.324 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:handleServiceInited, beforeInitedIntents size:0
+V/2019-12-06 14:06:46.347 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:06:46.358 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:06:46.368 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:06:46.458 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-7203261
+W/2019-12-06 14:06:46.468 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+D/2019-12-06 14:06:46.515 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+V/2019-12-06 14:06:46.543 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:(ignore) running v4 service count 0
+I/2019-12-06 14:06:46.552 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+I/2019-12-06 14:06:46.567 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+E/2019-12-06 14:06:46.570 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+I/2019-12-06 14:06:46.579 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:isSurvive trueAddress already in use
+I/2019-12-06 14:06:46.589 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:start as main service......
+V/2019-12-06 14:06:46.597 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = true)
+E/2019-12-06 14:06:46.621 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:06:46.650 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=443, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:06:46.661 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:443
+E/2019-12-06 14:06:46.728 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 443) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:06:46.748 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:06:46.758 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 443) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:06:46.782 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:06:46.807 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:06:46.811 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+D/2019-12-06 14:06:47.275 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+E/2019-12-06 14:06:47.318 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:startService failed, intent:Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.dts.freefireth/com.tencent.android.tpush.service.XGPushServiceV4 }, ex:android.content.ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+V/2019-12-06 14:06:47.483 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:06:47.494 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:06:47.503 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:06:47.558 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-7204366
+W/2019-12-06 14:06:47.567 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+E/2019-12-06 14:06:47.638 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:06:47.678 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:06:47.689 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=14000, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:06:47.714 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:14000
+E/2019-12-06 14:06:47.723 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 14000) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:06:47.745 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:06:47.764 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 14000) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:06:47.774 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:06:47.781 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:07:03.178 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+E/2019-12-06 14:07:03.188 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:startService failed, intent:Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.dts.freefireth/com.tencent.android.tpush.service.XGPushServiceV4 }, ex:android.content.ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+V/2019-12-06 14:07:03.373 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:07:03.691 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:07:03.737 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:07:03.998 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-7220800
+W/2019-12-06 14:07:04.071 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+E/2019-12-06 14:07:04.420 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:07:04.636 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:07:04.667 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=14000, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:07:04.688 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:14000
+E/2019-12-06 14:07:04.707 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 14000) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:07:04.737 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:07:04.753 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 14000) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:07:04.840 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:07:04.863 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:07:05.118 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+E/2019-12-06 14:07:05.171 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:startService failed, intent:Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.dts.freefireth/com.tencent.android.tpush.service.XGPushServiceV4 }, ex:android.content.ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+W/2019-12-06 14:06:45.103 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:06:45.112 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:06:45.121 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+V/2019-12-06 14:07:05.335 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:07:05.353 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:07:05.361 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:07:05.432 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-7222235
+W/2019-12-06 14:07:05.441 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+E/2019-12-06 14:07:05.526 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:07:05.644 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:07:05.662 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=8080, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:07:05.671 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:8080
+E/2019-12-06 14:07:05.684 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 8080) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:07:05.698 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:07:05.708 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 8080) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:07:05.728 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:07:05.741 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:07:06.191 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+E/2019-12-06 14:07:06.200 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:startService failed, intent:Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.dts.freefireth/com.tencent.android.tpush.service.XGPushServiceV4 }, ex:android.content.ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+V/2019-12-06 14:07:06.363 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+I/2019-12-06 14:07:06.586 [tpush.working.thread][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:main service pull up sloveSerice
+D/2019-12-06 14:07:06.692 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:07:06.712 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-06 14:07:06.808 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+W/2019-12-06 14:07:06.832 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.tencent.mtt:service
+W/2019-12-06 14:07:06.839 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.qq.xg4all:xg_vip_service
+W/2019-12-06 14:07:06.848 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.xiaotun.doorbell:xg_vip_service
+W/2019-12-06 14:07:06.855 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.yoosee:xg_vip_service
+W/2019-12-06 14:07:06.869 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.bcm.poc:xg_vip_service
+W/2019-12-06 14:07:06.877 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar.beta2:xg_vip_service
+W/2019-12-06 14:07:06.885 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar:xg_vip_service
+D/2019-12-06 14:07:06.894 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:07:06.901 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+E/2019-12-06 14:07:06.970 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:07:07.040 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:07:07.049 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=80, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:07:07.057 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:80
+E/2019-12-06 14:07:07.066 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:07:07.077 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:07:07.084 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:07:07.092 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:07:07.100 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+I/2019-12-06 14:07:07.107 [tpush.working.thread][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:main service pull up sloveSerice
+D/2019-12-06 14:07:07.187 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:07:07.195 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-06 14:07:07.244 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+W/2019-12-06 14:07:07.263 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.tencent.mtt:service
+W/2019-12-06 14:07:07.296 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.qq.xg4all:xg_vip_service
+W/2019-12-06 14:07:07.303 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.xiaotun.doorbell:xg_vip_service
+W/2019-12-06 14:07:07.310 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.yoosee:xg_vip_service
+W/2019-12-06 14:07:07.318 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.bcm.poc:xg_vip_service
+W/2019-12-06 14:07:07.324 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar.beta2:xg_vip_service
+W/2019-12-06 14:07:07.332 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar:xg_vip_service
+D/2019-12-06 14:08:55.881 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:network chanced:Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x4000010 (has extras) }
+D/2019-12-06 14:08:55.931 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: "ASUS_A8", roaming: false, failover: false, isAvailable: true]
+D/2019-12-06 14:08:55.984 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connected with network type WIFI
+V/2019-12-06 14:08:56.085 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:bindService ret:true
+D/2019-12-06 14:09:00.107 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.net.conn.CONNECTIVITY_CHANGE @@ com.dts.freefireth
+D/2019-12-06 14:09:00.126 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: "ASUS_A8", roaming: false, failover: false, isAvailable: true]
+D/2019-12-06 14:09:00.170 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connected with network type WIFI
+V/2019-12-06 14:09:02.300 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:09:02.351 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:09:02.385 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+E/2019-12-06 14:09:06.045 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:09:06.108 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=203.205.254.169,serverPort=80, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:09:06.210 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 203.205.254.169:80
+V/2019-12-06 14:09:06.384 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onSuccess(java.nio.SocketChannelImpl@2316cd3,java.nio.SocketChannelImpl@2316cd3)
+I/2019-12-06 14:09:06.458 [tpush.working.thread][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server succeed!
+D/2019-12-06 14:09:08.544 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendReconnMessage with token - 03fff04496b00ca64380acef2def0ddee94f133e
+V/2019-12-06 14:09:08.552 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+I/2019-12-06 14:09:08.566 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:TpnsClient is running and ready for send and recevie msg.
+D/2019-12-06 14:09:08.681 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = false packetLength = 410
+D/2019-12-06 14:09:08.886 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 35
+D/2019-12-06 14:09:09.132 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+D/2019-12-06 14:09:09.140 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+D/2019-12-06 14:09:09.152 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse request:token: 03fff04496b00ca64380acef2def0ddee94f133e
+deviceId: 461cd78e57077d4042d1f10aa4706adc
+networkType: 1
+unregInfoList: 0, []
+recvMsgList: 0, []
+mutableInfo: {
+	ssid: "ASUS_A8"
+	bssid: 04:92:26:66:a3:a8
+	mac: 02:00:00:00:00:00
+	wflist: 
+}
+deviceType: 0
+msgClickList: null	sdkVersion: 4.32
+reserved: {"new_mid":"03fff04496b00ca64380acef2def0ddee94f133e","new_mid_v":"4.07","app_accessids":[2100275588]}
+connVersion: 4
+guid: 9053918568
+ts: 0
+configVersion: -1
+, responseCode:0, response:confVersion: 32
+appOfflinePushMsgList: 0, []
+timeUs: 1575619748787699
+
+D/2019-12-06 14:09:09.160 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse rsp==null?:false
+D/2019-12-06 14:09:09.167 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:loadIPList :32
+W/2019-12-06 14:09:09.361 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:09:17.585 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:09:17.919 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:09:21.193 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:09:21.343 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+V/2019-12-06 14:09:28.174 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:verify com.dts.freefireth3158027627
+W/2019-12-06 14:09:17.310 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:09:17.330 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:09:17.344 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+D/2019-12-06 14:09:27.904 [Firebase-XGFcmListenerService][XG_fcm] [4.32][com.dts.freefireth]:[FCM Notification] From: 185753624591, title: , type: 1, content: {"title":"Perm Costume!","content":"Get Skeleton Magician when you play Big Head Mode now & collect Ammobox Tokens!\r"}, strMsgid: 3158027627, strBusiMsgId: 3158027627 , customContent : {busiMsgId=3158027627, type=1, msgId=3158027627, title=, content={"title":"Perm Costume!","content":"Get Skeleton Magician when you play Big Head Mode now & collect Ammobox Tokens!\r"}}
+I/2019-12-06 14:09:27.924 [Firebase-XGFcmListenerService][TPush] [4.32][com.dts.freefireth]:21002755883158027627com.dts.freefirethPerm Costume!Get Skeleton Magician when you play Big Head Mode now & collect Ammobox Tokens!,tag:tpush.local.msg.ad58a3823bd1060e8cab507316f6e7,exp:1578211767907
+I/2019-12-06 14:09:28.030 [tpush.working.thread][Utils] [4.32][com.dts.freefireth]:get acceptTime = [{"start":{"hour":"14","min":"09"},"end":{"hour":"23","min":"59"}}] , acceptBeginTime= 1575619740000
+I/2019-12-06 14:09:28.205 [tpush.working.thread][a] [4.32][com.dts.freefireth]:Receiver msg from other app :null
+D/2019-12-06 14:09:28.225 [tpush.working.thread][TPush] [4.32][com.dts.freefireth]:21002755883158027627com.dts.freefirethPerm Costume!Get Skeleton Magician when you play Big Head Mode now & collect Ammobox Tokens!,localMsgTag:tpush.local.msg.ad58a3823bd1060e8cab507316f6e7,diff:2591999699
+D/2019-12-06 14:09:28.541 [Thread-777][TPush] [4.32][com.dts.freefireth]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:09:28.603 [tpush.working.thread][TPush] [4.32][com.dts.freefireth]:XGPushNotification Build.VERSION.SDK_INT: 23, targetSDK:28
+W/2019-12-06 14:09:59.241 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:09:59.251 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:09:59.261 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+W/2019-12-06 14:11:12.278 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:11:12.301 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:11:12.315 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+V/2019-12-06 14:09:28.527 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:updateCachedMsgIntentByPkgName, size: 0
+V/2019-12-06 14:09:28.876 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:09:28.898 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_PUSH_VERIFY isResponse = false packetLength = 106
+D/2019-12-06 14:09:29.097 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-06 14:09:29.169 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH_VERIFY isResponse = true packetLength = 8
+D/2019-12-06 14:09:29.183 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH_VERIFY isResponse = true packetLength = 8
+W/2019-12-06 14:09:29.220 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:09:32.215 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:Null report list with msgId -1
+D/2019-12-06 14:09:59.354 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:09:59.685 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:10:03.595 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:10:03.782 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:11:12.536 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:11:12.960 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:11:18.353 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:11:18.615 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:11:21.735 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:11:22.053 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:11:24.996 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:11:25.302 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:12:29.222 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-06 14:12:29.260 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+W/2019-12-06 14:12:29.292 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+W/2019-12-06 14:12:30.722 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:12:30.770 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:12:30.801 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+I/2019-12-06 14:12:30.920 [Binder_2][TPush] [4.32][com.dts.freefireth]:getType uri:content://com.dts.freefireth.AUTH_XGPUSH/heart,match:30
+D/2019-12-06 14:12:29.443 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:12:29.474 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-06 14:12:31.107 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-06 14:12:31.176 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575619605958,"srv_etime":1575619951109,"srv_startTime":20,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":5,"con_freason":[{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1}]}
+D/2019-12-06 14:12:31.645 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 61
+D/2019-12-06 14:12:31.878 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+D/2019-12-06 14:12:31.915 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+W/2019-12-06 14:12:31.957 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-06 14:12:31.973 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:receive msg from service msgId = 0 pkg =  size = 1
+D/2019-12-06 14:12:32.009 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:distributeFromServer : accid=0 ,channelId=0,busiId=0,pkg=,msgId=0,type=0,ts=0,multi=0,date=,serverTime=0,ttl=0, size = 1
+V/2019-12-06 14:12:32.063 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:@@ msgServiceAck: Not add LocalMsg
+D/2019-12-06 14:12:32.107 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:>> messageDistribute, msg.appPkgName is null!
+D/2019-12-06 14:14:49.240 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:14:49.406 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:14:53.293 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:14:53.492 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:15:31.932 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-06 14:15:31.940 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+W/2019-12-06 14:15:31.948 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:15:32.033 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:15:32.040 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-06 14:15:32.091 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-06 14:15:32.109 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575619605958,"srv_etime":1575620132092,"srv_startTime":22,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":5,"con_freason":[{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1}]}
+D/2019-12-06 14:15:32.280 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 61
+D/2019-12-06 14:15:32.316 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+D/2019-12-06 14:15:32.331 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+V/2019-12-06 14:15:32.342 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:receive msg from service msgId = 0 pkg =  size = 1
+W/2019-12-06 14:15:32.342 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:15:32.349 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:distributeFromServer : accid=0 ,channelId=0,busiId=0,pkg=,msgId=0,type=0,ts=0,multi=0,date=,serverTime=0,ttl=0, size = 1
+V/2019-12-06 14:15:32.361 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:@@ msgServiceAck: Not add LocalMsg
+D/2019-12-06 14:15:32.369 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:>> messageDistribute, msg.appPkgName is null!
+D/2019-12-06 14:15:43.375 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 108
+D/2019-12-06 14:15:43.398 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = true packetLength = 93
+D/2019-12-06 14:15:43.408 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = true packetLength = 93
+W/2019-12-06 14:15:43.417 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:15:43.436 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 33
+D/2019-12-06 14:15:43.440 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:>> Register [accId = 2100275588 , packName = com.dts.freefireth , rsp = 182]
+D/2019-12-06 14:15:43.498 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 18
+D/2019-12-06 14:15:43.509 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 18
+W/2019-12-06 14:15:43.519 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:15:43.545 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendReconnMessage with token - 03fff04496b00ca64380acef2def0ddee94f133e
+V/2019-12-06 14:15:43.558 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:15:43.571 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = false packetLength = 282
+I/2019-12-06 14:15:43.590 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:binder other push token with accid = 2100275588  token = 03fff04496b00ca64380acef2def0ddee94f133e otherPushType = fcm otherPushToken = eWi4eiJT5PU:APA91bHwBmWv_fWK2yE6FsohOYSBa6P3uZNKjC9i9_ZdEBH40CikLO-0hxotUYzg9byY6sMfSemHYo4jLWw3i5RtLESzuev8hCzp59OYv7Ct6oaAOoRT9nxPqW2eVs896M2JlzbfytgQ
+I/2019-12-06 14:15:43.599 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:Already binder other push succeed token with accid = 2100275588  token = 03fff04496b00ca64380acef2def0ddee94f133e otherPushType = fcm otherPushToken = eWi4eiJT5PU:APA91bHwBmWv_fWK2yE6FsohOYSBa6P3uZNKjC9i9_ZdEBH40CikLO-0hxotUYzg9byY6sMfSemHYo4jLWw3i5RtLESzuev8hCzp59OYv7Ct6oaAOoRT9nxPqW2eVs896M2JlzbfytgQ
+D/2019-12-06 14:15:43.609 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendTag to server (2100275588,com.dts.freefireth)
+V/2019-12-06 14:15:43.617 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:15:43.632 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_TAG isResponse = false packetLength = 106
+D/2019-12-06 14:15:43.725 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 35
+D/2019-12-06 14:15:43.743 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+D/2019-12-06 14:15:43.751 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+W/2019-12-06 14:15:43.759 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:15:43.760 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse request:token: 03fff04496b00ca64380acef2def0ddee94f133e
+deviceId: 461cd78e57077d4042d1f10aa4706adc
+networkType: 1
+unregInfoList: 0, []
+recvMsgList: 0, []
+mutableInfo: {
+	ssid: "ASUS_A8"
+	bssid: 04:92:26:66:a3:a8
+	mac: 02:00:00:00:00:00
+	wflist: 
+}
+deviceType: 0
+msgClickList: null	sdkVersion: 4.32
+reserved: {"new_mid":"03fff04496b00ca64380acef2def0ddee94f133e","new_mid_v":"4.07","app_accessids":[2100275588]}
+connVersion: 4
+guid: 9053918568
+ts: 0
+configVersion: -1
+, responseCode:0, response:confVersion: 32
+appOfflinePushMsgList: 0, []
+timeUs: 1575620143671789
+
+D/2019-12-06 14:15:43.767 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse rsp==null?:false
+D/2019-12-06 14:15:43.775 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:loadIPList :32
+D/2019-12-06 14:15:43.804 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-06 14:15:43.820 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+D/2019-12-06 14:15:43.827 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+I/2019-12-06 14:15:43.835 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:Set tag ack success  [accId = 2100275588 , tagtype = 6 , tagName = in_clan_True language_en environment_live first_time_paid_True region_IND, tagReserved = , packName = com.dts.freefireth , rsp = 195]
+W/2019-12-06 14:15:43.835 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:15:53.640 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendTag to server (2100275588,com.dts.freefireth)
+V/2019-12-06 14:15:53.646 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:15:53.656 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_TAG isResponse = false packetLength = 107
+D/2019-12-06 14:15:53.832 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-06 14:15:53.851 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+D/2019-12-06 14:15:53.865 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+I/2019-12-06 14:15:53.875 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:Set tag ack success  [accId = 2100275588 , tagtype = 6 , tagName = in_clan_True language_en environment_live region_IND first_time_paid_False, tagReserved = , packName = com.dts.freefireth , rsp = 209]
+W/2019-12-06 14:15:53.878 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:18:22.911 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.USER_PRESENT @@ com.dts.freefireth
+V/2019-12-06 14:18:23.127 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+D/2019-12-06 14:18:53.878 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-06 14:18:53.887 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.169,port:80,protocol:tcp), isClientCreating = false)
+W/2019-12-06 14:18:53.914 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-06 14:18:54.004 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:18:54.014 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-06 14:18:54.059 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-06 14:18:54.099 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575619605958,"srv_etime":1575620334064,"srv_startTime":24,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":5,"con_freason":[{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1}]}
+D/2019-12-06 14:18:54.271 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 61
+D/2019-12-06 14:18:54.296 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+D/2019-12-06 14:18:54.309 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+W/2019-12-06 14:18:54.318 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-06 14:18:54.318 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:receive msg from service msgId = 0 pkg =  size = 1
+D/2019-12-06 14:18:54.327 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:distributeFromServer : accid=0 ,channelId=0,busiId=0,pkg=,msgId=0,type=0,ts=0,multi=0,date=,serverTime=0,ttl=0, size = 1
+D/2019-12-06 14:22:14.273 [main][XGPushService] [4.32][com.dts.freefireth:xg_service_v4]:reportLastServiceState {"srv_stime":1575619605958,"srv_etime":1575620514590,"srv_startTime":24,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":5,"con_freason":[{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1}]}
+D/2019-12-06 14:22:15.354 [Thread-944][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+W/2019-12-06 14:22:15.487 [main][Util] [4.32][com.dts.freefireth:xg_service_v4]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:22:15.494 [main][Util] [4.32][com.dts.freefireth:xg_service_v4]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+D/2019-12-06 14:22:15.503 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:network chanced:Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x4000010 (has extras) }
+D/2019-12-06 14:22:15.513 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: "ASUS_A8", roaming: false, failover: false, isAvailable: true]
+D/2019-12-06 14:22:15.519 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connected with network type WIFI
+V/2019-12-06 14:22:15.530 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:bindService ret:true
+V/2019-12-06 14:22:15.542 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:(ignore) running v4 service count 0
+I/2019-12-06 14:22:15.548 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+I/2019-12-06 14:22:15.557 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+V/2019-12-06 14:22:15.564 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:tryToKeepServiceAlive socketFinalName:17b8f414a85dd456a15585b41d7f686f03fff04496b00ca64380acef2def0ddee94f133e
+I/2019-12-06 14:22:15.571 [main][f] [4.32][com.dts.freefireth:xg_service_v4]:is xg_service
+I/2019-12-06 14:22:15.580 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:start as main service......
+I/2019-12-06 14:22:15.587 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:Service's first running at com.dts.freefireth version : 4.32
+I/2019-12-06 14:22:15.597 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:handleServiceInited, beforeInitedIntents size:0
+V/2019-12-06 14:22:15.613 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:22:15.629 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:22:15.645 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:22:15.698 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-8132477
+W/2019-12-06 14:22:15.719 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+D/2019-12-06 14:22:15.789 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+E/2019-12-06 14:22:16.116 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:22:16.219 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:22:16.274 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=8080, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:22:16.295 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:8080
+D/2019-12-06 14:22:16.482 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:network chanced:Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x4000010 (has extras) }
+E/2019-12-06 14:22:16.511 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 8080) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+D/2019-12-06 14:22:16.515 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: <unknown ssid>, roaming: false, failover: false, isAvailable: true]
+D/2019-12-06 14:22:16.530 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:DisConnected with network type WIFI
+E/2019-12-06 14:22:16.532 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+I/2019-12-06 14:22:16.542 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:Action -> stop Current Connect
+E/2019-12-06 14:22:16.549 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 8080) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:22:16.562 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:22:16.572 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+V/2019-12-06 14:22:17.813 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:22:17.829 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:22:17.872 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:22:17.937 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-8134741
+W/2019-12-06 14:22:17.945 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+E/2019-12-06 14:22:18.044 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:22:18.158 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:22:18.172 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=80, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:22:18.179 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:80
+E/2019-12-06 14:22:18.189 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:22:18.200 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:22:18.212 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:22:18.220 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+W/2019-12-06 14:22:36.428 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:22:36.435 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:22:36.444 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+I/2019-12-06 14:22:36.486 [Binder_1][TPush] [4.32][com.dts.freefireth]:getType uri:content://com.dts.freefireth.AUTH_XGPUSH/heart,match:30
+I/2019-12-06 14:22:18.228 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:22:18.932 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.net.conn.CONNECTIVITY_CHANGE @@ com.dts.freefireth
+D/2019-12-06 14:22:18.942 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: <unknown ssid>, roaming: false, failover: false, isAvailable: true]
+D/2019-12-06 14:22:18.952 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:DisConnected with network type WIFI
+I/2019-12-06 14:22:18.960 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:Action -> stop Current Connect
+I/2019-12-06 14:22:35.630 [tpush.working.thread][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:main service pull up sloveSerice
+D/2019-12-06 14:22:35.751 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-06 14:22:35.767 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-06 14:22:36.583 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+W/2019-12-06 14:22:36.658 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.tencent.mtt:service
+W/2019-12-06 14:22:36.667 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.qq.xg4all:xg_vip_service
+W/2019-12-06 14:22:36.687 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.xiaotun.doorbell:xg_vip_service
+W/2019-12-06 14:22:36.697 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.yoosee:xg_vip_service
+W/2019-12-06 14:22:36.706 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.bcm.poc:xg_vip_service
+W/2019-12-06 14:22:36.725 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar.beta2:xg_vip_service
+W/2019-12-06 14:22:36.735 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar:xg_vip_service
+D/2019-12-06 14:36:09.337 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:36:09.595 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:36:09.605 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:36:09.628 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:36:09.856 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-8966605
+W/2019-12-06 14:36:09.881 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+E/2019-12-06 14:36:09.953 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:36:10.066 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:36:10.074 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=80, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:36:10.084 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:80
+E/2019-12-06 14:36:10.102 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:10.116 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:36:10.134 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:10.160 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:36:10.176 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:36:12.848 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:36:13.070 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:36:13.087 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:36:13.114 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:36:13.242 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575612403183},diff:-8970051
+W/2019-12-06 14:36:13.253 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+E/2019-12-06 14:36:13.313 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:36:13.347 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:36:13.356 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=14000, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:36:13.363 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:14000
+E/2019-12-06 14:36:13.372 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 14000) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:13.384 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:36:13.391 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 14000) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:13.398 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:36:13.406 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:36:13.601 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:36:13.781 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:36:13.787 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:36:13.795 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+E/2019-12-06 14:36:13.898 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:36:14.013 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:36:14.022 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=80, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:36:14.030 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:80
+E/2019-12-06 14:36:14.041 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:14.053 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:36:14.063 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 80) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:14.080 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-06 14:36:14.089 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+D/2019-12-06 14:36:14.554 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-06 14:36:14.718 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-06 14:36:14.778 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-06 14:36:14.788 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+E/2019-12-06 14:36:15.023 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:
+* Exception : 
+
+E/2019-12-06 14:36:15.142 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-06 14:36:15.149 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=183.232.98.178,serverPort=443, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-06 14:36:15.156 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 183.232.98.178:443
+E/2019-12-06 14:36:15.164 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /183.232.98.178 (port 443) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:15.175 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-06 14:36:15.184 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /183.232.98.178 (port 443) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Posix.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:111)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:170)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	... 10 more
+
+E/2019-12-06 14:36:15.196 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+W/2019-12-06 14:36:09.253 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-06 14:36:09.261 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-06 14:36:09.270 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate

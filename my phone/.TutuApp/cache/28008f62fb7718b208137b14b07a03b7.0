@@ -1,0 +1,17 @@
+http://cdn.taptica.com/creatives_1/34813274/69eca54210e548cebf133faf9feec4e0_9f51dbd76328ca9b9c2ba45638b0f888_566532_01ff7f3ceaa7be3886586caa4ea57217.jpeg
+GET
+0
+HTTP/1.1 301 Moved Permanently
+12
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://cdn.taptica.com/creatives_1/34813274/69eca54210e548cebf133faf9feec4e0_9f51dbd76328ca9b9c2ba45638b0f888_566532_01ff7f3ceaa7be3886586caa4ea57217.jpeg
+Date: Wed, 15 Aug 2018 08:13:22 GMT
+Connection: keep-alive
+Access-Control-Max-Age: 86400
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: GET,POST
+Access-Control-Allow-Origin: *
+OkHttp-Sent-Millis: 1534320778190
+OkHttp-Received-Millis: 1534320778521

@@ -1,0 +1,17 @@
+http://cdn.taptica.com/creatives/34623642/d33ddbb06aab4c7aaf51b10475269bdb_eToro_Android_UK_800x440.jpg
+GET
+0
+HTTP/1.1 301 Moved Permanently
+12
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://cdn.taptica.com/creatives/34623642/d33ddbb06aab4c7aaf51b10475269bdb_eToro_Android_UK_800x440.jpg
+Date: Thu, 09 Aug 2018 09:28:54 GMT
+Connection: keep-alive
+Access-Control-Max-Age: 86400
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: GET,POST
+Access-Control-Allow-Origin: *
+OkHttp-Sent-Millis: 1533806912623
+OkHttp-Received-Millis: 1533806912691

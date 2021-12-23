@@ -1,0 +1,17 @@
+http://cdn.taptica.com/creatives_1/33488580/5f4a5f5717d144c48f8d03a4cdf38e8d_Daraz_PK_1200x627.jpg
+GET
+0
+HTTP/1.1 301 Moved Permanently
+12
+Server: AkamaiGHost
+Content-Length: 0
+Location: https://cdn.taptica.com/creatives_1/33488580/5f4a5f5717d144c48f8d03a4cdf38e8d_Daraz_PK_1200x627.jpg
+Date: Sun, 15 Jul 2018 11:49:26 GMT
+Connection: keep-alive
+Access-Control-Max-Age: 86400
+Access-Control-Allow-Credentials: false
+Access-Control-Allow-Headers: *
+Access-Control-Allow-Methods: GET,POST
+Access-Control-Allow-Origin: *
+OkHttp-Sent-Millis: 1531655354318
+OkHttp-Received-Millis: 1531655354372

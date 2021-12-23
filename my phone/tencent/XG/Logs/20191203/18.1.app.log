@@ -1,0 +1,229 @@
+W/2019-12-03 18:47:14.047 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-03 18:47:14.076 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-03 18:47:14.108 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+W/2019-12-03 18:48:07.176 [main][Util] [4.32][com.dts.freefireth:xg_service_v4]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-03 18:48:07.186 [main][Util] [4.32][com.dts.freefireth:xg_service_v4]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+E/2019-12-03 18:48:07.243 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:startService failed, intent:Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.dts.freefireth/com.tencent.android.tpush.service.XGPushServiceV4 }, ex:android.content.ReceiverCallNotAllowedException: BroadcastReceiver components are not allowed to bind to services
+D/2019-12-03 18:48:07.579 [main][XGPushService] [4.32][com.dts.freefireth:xg_service_v4]:reportLastServiceState 
+D/2019-12-03 18:48:07.740 [Thread-612][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+D/2019-12-03 18:48:07.840 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:network chanced:Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x4000010 (has extras) }
+D/2019-12-03 18:48:07.880 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: "ASUS_A8", roaming: false, failover: false, isAvailable: true]
+D/2019-12-03 18:48:07.905 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connected with network type WIFI
+V/2019-12-03 18:48:07.999 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:bindService ret:true
+V/2019-12-03 18:48:08.034 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:(ignore) running v4 service count 0
+I/2019-12-03 18:48:08.050 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+I/2019-12-03 18:48:08.072 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+V/2019-12-03 18:48:08.107 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:tryToKeepServiceAlive socketFinalName:17b8f414a85dd456a15585b41d7f686f03fff04496b00ca64380acef2def0ddee94f133e
+I/2019-12-03 18:48:08.149 [main][f] [4.32][com.dts.freefireth:xg_service_v4]:is xg_service
+I/2019-12-03 18:48:08.174 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:start as main service......
+I/2019-12-03 18:48:08.197 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:Service's first running at com.dts.freefireth version : 4.32
+I/2019-12-03 18:48:08.215 [main][a] [4.32][com.dts.freefireth:xg_service_v4]:handleServiceInited, beforeInitedIntents size:0
+V/2019-12-03 18:48:08.250 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-03 18:48:08.310 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-03 18:48:08.340 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-03 18:48:08.418 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.117;203.205.254.169","ttl":300,"exp":1575371667916},diff:-5620458
+W/2019-12-03 18:48:08.465 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+D/2019-12-03 18:48:08.565 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+V/2019-12-03 18:48:08.628 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:(ignore) running v4 service count 0
+I/2019-12-03 18:48:08.665 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+I/2019-12-03 18:48:08.682 [main][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getSocketName: tencentxgpush
+I/2019-12-03 18:48:08.717 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:isSurvive trueAddress already in use
+I/2019-12-03 18:48:08.740 [main][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:start as main service......
+V/2019-12-03 18:48:08.755 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = true)
+D/2019-12-03 18:48:09.064 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:getAddrByName line:3eeef9bfa6f89c85271d9e300f3c33953eeef9bfa6f89c85072c570b2bce139568bb18fa1cb96703
+D/2019-12-03 18:48:09.109 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+D/2019-12-03 18:48:09.178 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:ttl:300,300
+D/2019-12-03 18:48:09.664 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.169;203.205.254.117","ttl":300,"exp":1575377589180},diff:299532
+D/2019-12-03 18:48:09.679 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:use httpdns StrategyItem:203.205.254.117:8080
+D/2019-12-03 18:48:09.689 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 203.205.254.117:8080
+V/2019-12-03 18:48:09.949 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onSuccess(java.nio.SocketChannelImpl@706ef61,java.nio.SocketChannelImpl@706ef61)
+I/2019-12-03 18:48:09.978 [tpush.working.thread][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server succeed!
+D/2019-12-03 18:48:10.653 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendReconnMessage with token - 03fff04496b00ca64380acef2def0ddee94f133e
+V/2019-12-03 18:48:10.669 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+I/2019-12-03 18:48:10.683 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:TpnsClient is running and ready for send and recevie msg.
+D/2019-12-03 18:48:10.737 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = false packetLength = 410
+D/2019-12-03 18:48:10.889 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 35
+V/2019-12-03 18:48:11.119 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:48:11.217 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+D/2019-12-03 18:48:11.229 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+D/2019-12-03 18:48:11.248 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse request:token: 03fff04496b00ca64380acef2def0ddee94f133e
+deviceId: 461cd78e57077d4042d1f10aa4706adc
+networkType: 1
+unregInfoList: 0, []
+recvMsgList: 0, []
+mutableInfo: {
+	ssid: "ASUS_A8"
+	bssid: 04:92:26:66:a3:a8
+	mac: 02:00:00:00:00:00
+	wflist: 
+}
+deviceType: 0
+msgClickList: null	sdkVersion: 4.32
+reserved: {"new_mid":"03fff04496b00ca64380acef2def0ddee94f133e","new_mid_v":"4.07","app_accessids":[2100275588]}
+connVersion: 4
+guid: 9053918568
+ts: 0
+configVersion: -1
+, responseCode:0, response:confVersion: 32
+appOfflinePushMsgList: 0, []
+timeUs: 1575377291719886
+
+D/2019-12-03 18:48:11.258 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse rsp==null?:false
+D/2019-12-03 18:48:11.265 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:loadIPList :32
+W/2019-12-03 18:48:11.546 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:48:24.851 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.net.conn.CONNECTIVITY_CHANGE @@ com.dts.freefireth
+D/2019-12-03 18:48:24.861 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connection state changed to - [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: "ASUS_A8", roaming: false, failover: false, isAvailable: true]
+D/2019-12-03 18:48:24.870 [main][OptimalLinkSelector] [4.32][com.dts.freefireth:xg_service_v4]:Connected with network type WIFI
+V/2019-12-03 18:48:27.160 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+I/2019-12-03 18:48:28.263 [tpush.working.thread][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:main service pull up sloveSerice
+D/2019-12-03 18:48:28.351 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-03 18:48:28.363 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-03 18:48:29.822 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+W/2019-12-03 18:48:30.216 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.tencent.mtt:service
+W/2019-12-03 18:48:30.228 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.qq.xg4all:xg_vip_service
+W/2019-12-03 18:48:30.345 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.xiaotun.doorbell:xg_vip_service
+W/2019-12-03 18:48:30.437 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.yoosee:xg_vip_service
+W/2019-12-03 18:48:30.523 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.bcm.poc:xg_vip_service
+W/2019-12-03 18:48:30.540 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar.beta2:xg_vip_service
+W/2019-12-03 18:48:30.607 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar:xg_vip_service
+I/2019-12-03 18:48:30.617 [tpush.working.thread][PushServiceManager] [4.32][com.dts.freefireth:xg_service_v4]:main service pull up sloveSerice
+D/2019-12-03 18:48:30.720 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-03 18:48:30.736 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+D/2019-12-03 18:48:30.785 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+I/2019-12-03 18:48:30.824 [tpush.working.thread][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+W/2019-12-03 18:48:30.972 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.tencent.mtt:service
+W/2019-12-03 18:48:30.979 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.qq.xg4all:xg_vip_service
+W/2019-12-03 18:48:30.985 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.xiaotun.doorbell:xg_vip_service
+W/2019-12-03 18:48:30.992 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.yoosee:xg_vip_service
+W/2019-12-03 18:48:30.998 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.bcm.poc:xg_vip_service
+W/2019-12-03 18:48:31.005 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar.beta2:xg_vip_service
+W/2019-12-03 18:48:31.011 [tpush.working.thread][Util] [4.32][com.dts.freefireth:xg_service_v4]:pullUpOtherServiceByProviderAndActivityJSONOject com.wosai.cashbar:xg_vip_service
+V/2019-12-03 18:48:31.023 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:48:31.651 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-03 18:48:31.876 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:48:33.230 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-03 18:48:33.402 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:48:34.083 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-03 18:48:34.287 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:48:34.570 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_DISCONNECTED @@ com.dts.freefireth
+V/2019-12-03 18:48:34.856 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:51:32.490 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-03 18:51:32.506 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+W/2019-12-03 18:51:32.516 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:51:32.678 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-03 18:51:32.692 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-03 18:51:34.320 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-03 18:51:34.406 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575377287439,"srv_etime":1575377494321,"srv_startTime":9,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":0}
+D/2019-12-03 18:51:34.650 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 61
+D/2019-12-03 18:51:34.683 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+D/2019-12-03 18:51:34.690 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+W/2019-12-03 18:51:34.698 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-03 18:51:34.704 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:receive msg from service msgId = 0 pkg =  size = 1
+D/2019-12-03 18:51:34.715 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:distributeFromServer : accid=0 ,channelId=0,busiId=0,pkg=,msgId=0,type=0,ts=0,multi=0,date=,serverTime=0,ttl=0, size = 1
+W/2019-12-03 18:52:20.444 [main][Util] [4.32][com.dts.freefireth]:Util -> initGlobal can not find provider com.tencent.mid.api.MidProvider with authority com.dts.freefireth.TENCENT.MID.V3
+W/2019-12-03 18:52:20.454 [main][Util] [4.32][com.dts.freefireth]:Maybe have not contentprovider: com.tencent.mid.api.MidProvider
+I/2019-12-03 18:52:20.464 [main][TPush] [4.32][com.dts.freefireth]:XGPushProvider onCreate
+V/2019-12-03 18:51:34.725 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:@@ msgServiceAck: Not add LocalMsg
+D/2019-12-03 18:51:34.732 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:>> messageDistribute, msg.appPkgName is null!
+D/2019-12-03 18:53:19.834 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 108
+D/2019-12-03 18:53:19.883 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = true packetLength = 93
+D/2019-12-03 18:53:19.902 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = true packetLength = 93
+W/2019-12-03 18:53:19.923 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:53:19.938 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:>> Register [accId = 2100275588 , packName = com.dts.freefireth , rsp = 220]
+D/2019-12-03 18:53:20.042 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 33
+D/2019-12-03 18:53:20.096 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendReconnMessage with token - 03fff04496b00ca64380acef2def0ddee94f133e
+D/2019-12-03 18:53:20.165 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 18
+D/2019-12-03 18:53:20.179 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 18
+W/2019-12-03 18:53:20.192 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-03 18:53:20.229 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:53:20.246 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = false packetLength = 282
+I/2019-12-03 18:53:20.246 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:binder other push token with accid = 2100275588  token = 03fff04496b00ca64380acef2def0ddee94f133e otherPushType = fcm otherPushToken = eWi4eiJT5PU:APA91bHwBmWv_fWK2yE6FsohOYSBa6P3uZNKjC9i9_ZdEBH40CikLO-0hxotUYzg9byY6sMfSemHYo4jLWw3i5RtLESzuev8hCzp59OYv7Ct6oaAOoRT9nxPqW2eVs896M2JlzbfytgQ
+I/2019-12-03 18:53:20.256 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:Already binder other push succeed token with accid = 2100275588  token = 03fff04496b00ca64380acef2def0ddee94f133e otherPushType = fcm otherPushToken = eWi4eiJT5PU:APA91bHwBmWv_fWK2yE6FsohOYSBa6P3uZNKjC9i9_ZdEBH40CikLO-0hxotUYzg9byY6sMfSemHYo4jLWw3i5RtLESzuev8hCzp59OYv7Ct6oaAOoRT9nxPqW2eVs896M2JlzbfytgQ
+V/2019-12-03 18:53:20.283 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:Register(2100275588,461cd78e57077d4042d1f10aa4706adc,,,-1),token: 03fff04496b00ca64380acef2def0ddee94f133e,payload:  channel id-1
+V/2019-12-03 18:53:20.294 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:53:20.303 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendTag to server (2100275588,com.dts.freefireth)
+D/2019-12-03 18:53:20.309 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = false packetLength = 370
+V/2019-12-03 18:53:20.319 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:53:20.333 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_TAG isResponse = false packetLength = 106
+D/2019-12-03 18:53:20.493 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 35
+D/2019-12-03 18:53:20.511 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+D/2019-12-03 18:53:20.525 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_RECONNECT isResponse = true packetLength = 20
+W/2019-12-03 18:53:20.537 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:53:20.538 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse request:token: 03fff04496b00ca64380acef2def0ddee94f133e
+deviceId: 461cd78e57077d4042d1f10aa4706adc
+networkType: 1
+unregInfoList: 0, []
+recvMsgList: 0, []
+mutableInfo: {
+	ssid: "ASUS_A8"
+	bssid: 04:92:26:66:a3:a8
+	mac: 02:00:00:00:00:00
+	wflist: 
+}
+deviceType: 0
+msgClickList: null	sdkVersion: 4.32
+reserved: {"new_mid":"03fff04496b00ca64380acef2def0ddee94f133e","new_mid_v":"4.07","app_accessids":[2100275588]}
+connVersion: 4
+guid: 9053918568
+ts: 0
+configVersion: -1
+, responseCode:0, response:confVersion: 32
+appOfflinePushMsgList: 0, []
+timeUs: 1575377601233770
+
+D/2019-12-03 18:53:20.554 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:reconnCallback onResponse rsp==null?:false
+D/2019-12-03 18:53:20.568 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:loadIPList :32
+D/2019-12-03 18:53:20.643 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 103
+D/2019-12-03 18:53:20.674 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = true packetLength = 88
+D/2019-12-03 18:53:20.688 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_REGISTER isResponse = true packetLength = 88
+D/2019-12-03 18:53:20.701 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:>> Register [accId = 2100275588 , packName =  , rsp = 379]
+W/2019-12-03 18:53:20.702 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:53:20.746 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-03 18:53:20.832 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+D/2019-12-03 18:53:20.839 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+I/2019-12-03 18:53:20.851 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:Set tag ack success  [accId = 2100275588 , tagtype = 6 , tagName = in_clan_True language_en environment_live first_time_paid_True region_IND, tagReserved = , packName = com.dts.freefireth , rsp = 506]
+W/2019-12-03 18:53:20.854 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-03 18:53:25.365 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:53:25.381 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_CLIENTREPORT isResponse = false packetLength = 126
+D/2019-12-03 18:53:25.515 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-03 18:53:25.535 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_CLIENTREPORT isResponse = true packetLength = 8
+D/2019-12-03 18:53:25.545 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_CLIENTREPORT isResponse = true packetLength = 8
+W/2019-12-03 18:53:25.555 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-03 18:53:25.845 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:53:25.858 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_CLIENTREPORT isResponse = false packetLength = 126
+D/2019-12-03 18:53:25.991 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-03 18:53:26.011 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_CLIENTREPORT isResponse = true packetLength = 8
+D/2019-12-03 18:53:26.020 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_CLIENTREPORT isResponse = true packetLength = 8
+W/2019-12-03 18:53:26.031 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:53:32.783 [tpush.working.thread][PushServiceNetworkHandler] [4.32][com.dts.freefireth:xg_service_v4]:Action -> sendTag to server (2100275588,com.dts.freefireth)
+V/2019-12-03 18:53:32.791 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:53:32.801 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidSendPacket packet : h protocol = 1 command = TPNS_COMMAND_TAG isResponse = false packetLength = 107
+D/2019-12-03 18:53:34.091 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 23
+D/2019-12-03 18:53:34.117 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+D/2019-12-03 18:53:34.152 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket RequestSuccRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_TAG isResponse = true packetLength = 8
+I/2019-12-03 18:53:34.170 [tpush.working.thread][a] [4.32][com.dts.freefireth:xg_service_v4]:Set tag ack success  [accId = 2100275588 , tagtype = 6 , tagName = in_clan_True language_en environment_live region_IND first_time_paid_False, tagReserved = , packName = com.dts.freefireth , rsp = 1353]
+W/2019-12-03 18:53:34.176 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:56:18.411 [main][XGPushReceiver] [4.32][com.dts.freefireth:xg_service_v4]:PushReceiver received android.intent.action.ACTION_POWER_CONNECTED @@ com.dts.freefireth
+V/2019-12-03 18:56:18.576 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+D/2019-12-03 18:56:34.171 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-03 18:56:34.188 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+W/2019-12-03 18:56:34.204 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:56:34.352 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-03 18:56:34.363 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-03 18:56:34.457 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-03 18:56:34.580 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575377287439,"srv_etime":1575377794459,"srv_startTime":11,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".start_slave",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":0}
+D/2019-12-03 18:56:34.738 [TpnsClient][TpnsClient] [4.32][com.dts.freefireth:xg_service_v4]:####Read one pkg with length = 61
+D/2019-12-03 18:56:34.772 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket packet : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+D/2019-12-03 18:56:34.780 [TpnsClient][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> clientDidReceivePacket PushMessageRunnable NEV1 : g protocol = 1 command = TPNS_COMMAND_PUSH isResponse = false packetLength = 46
+W/2019-12-03 18:56:34.791 [TpnsClient][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+V/2019-12-03 18:56:34.797 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:receive msg from service msgId = 0 pkg =  size = 1
+D/2019-12-03 18:56:34.807 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:distributeFromServer : accid=0 ,channelId=0,busiId=0,pkg=,msgId=0,type=0,ts=0,multi=0,date=,serverTime=0,ttl=0, size = 1
+V/2019-12-03 18:56:34.814 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:@@ msgServiceAck: Not add LocalMsg
+D/2019-12-03 18:56:34.822 [tpush.working.thread][SrvMessageManager] [4.32][com.dts.freefireth:xg_service_v4]:>> messageDistribute, msg.appPkgName is null!
+D/2019-12-03 18:59:57.303 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-03 18:59:57.410 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = a(ip:203.205.254.117,port:8080,protocol:tcp), isClientCreating = false)
+W/2019-12-03 18:59:57.460 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-03 18:59:57.633 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-03 18:59:57.658 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-03 18:59:57.773 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-03 18:59:57.810 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575377287439,"srv_etime":1575377997774,"srv_startTime":11,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".start_slave",".keepalive"],"hb_suc":0,"hb_failed":0,"con_suc":1,"con_failed":0}

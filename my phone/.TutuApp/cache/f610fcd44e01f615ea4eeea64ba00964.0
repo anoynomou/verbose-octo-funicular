@@ -1,0 +1,20 @@
+http://face.feng.com/avatar.php?uid=16326751
+GET
+0
+HTTP/1.1 301 Moved Permanently
+15
+Server: Tengine
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Date: Thu, 12 Jul 2018 09:25:55 GMT
+Location: http://face1.feng.com/avatar.php?uid=16326751
+Set-Cookie: SERVERID=104882b574c91d7c8db6fe3997326597|1531387555|1531387555;Path=/
+Via: cache30.l2st3-2[24,301-0,M], cache19.l2st3-2[26,0], cache5.cn500[302,301-0,M], cache5.cn500[304,0]
+X-Cache: MISS TCP_MISS dirn:-2:-2 mlen:-1
+X-Swift-SaveTime: Thu, 12 Jul 2018 09:25:56 GMT
+X-Swift-CacheTime: 0
+Timing-Allow-Origin: *
+EagleId: 7a485ecd15313875557191812e
+OkHttp-Sent-Millis: 1531387543459
+OkHttp-Received-Millis: 1531387543904

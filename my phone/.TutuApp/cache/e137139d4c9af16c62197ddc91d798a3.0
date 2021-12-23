@@ -1,0 +1,17 @@
+http://passport.tutuapp.com/ucenter//data/avatar/000/00/43/86_avatar_middle.jpg?md5=0f5b0f44cb451e23ec637926d9d3826f
+GET
+0
+HTTP/1.1 200 OK
+12
+Date: Thu, 12 Jul 2018 09:44:38 GMT
+Content-Type: image/jpeg
+Content-Length: 25752
+Connection: keep-alive
+Last-Modified: Sat, 26 May 2018 20:21:15 GMT
+ETag: "5b09c1bb-6498"
+Expires: Sat, 11 Aug 2018 09:44:38 GMT
+Cache-Control: max-age=2592000
+Accept-Ranges: bytes
+Set-Cookie: SERVERID=f9df0806c3b21aaa5be540438544fec4|1531388678|1531388678;Path=/
+OkHttp-Sent-Millis: 1531388666864
+OkHttp-Received-Millis: 1531388667225

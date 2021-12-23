@@ -1,0 +1,16 @@
+http://passport.tutuapp.com/ucenter/avatar.php?uid=366
+GET
+0
+HTTP/1.1 301 Moved Permanently
+11
+Date: Thu, 12 Jul 2018 09:24:37 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+cache-control: no-cache,must-revalidate
+Last-Modified: Thu, 12 Jul 2018 17:24:37 +0800
+Expires: Fri, 13 Jul 2018 17:24:37 +0800
+Location: http://passport.tutuapp.com/ucenter//images/noavatar_middle.gif
+Set-Cookie: SERVERID=f9df0806c3b21aaa5be540438544fec4|1531387477|1531387477;Path=/
+OkHttp-Sent-Millis: 1531387465203
+OkHttp-Received-Millis: 1531387468658

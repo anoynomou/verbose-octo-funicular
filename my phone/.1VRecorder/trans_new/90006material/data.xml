@@ -1,0 +1,93 @@
+<root version="0.2">
+  <textures />
+  <materials>
+    <material id="0" shader="matte" texture_id="-101" mask_id="-1" color="1,1,1,1" />
+    <material id="1" shader="matte" texture_id="-100" mask_id="-1" color="1,1,1,0.9372549" />
+  </materials>
+  <scene duration="1" frame_rate="30" play_mode="0">
+    <screens>
+      <screen name="" aspect="1.33">
+        <projection_matrix>0.1499079,0,0,0,0,0.2,0,0,0,0,-0.01,0,0,0,0,1</projection_matrix>
+        <view_matrix>1,0,0,0,0,1,0,0,0,0,-1,-10,0,0,0,1</view_matrix>
+        <object name="shiping-16-9-1" type="mesh" mesh_id="0" id="0" material_id="0">
+          <transform position="0,0,1" scale="17.94359,10.21873,1" rotation="0,0,0,1" />
+        </object>
+        <object name="shiping-16-9-2" type="mesh" mesh_id="0" id="1" material_id="1">
+          <transform position="-2.93063,-3.4,0" scale="27.72219,34.77508,1" rotation="0,0,-0.3826835,0.9238795" />
+          <animations>
+            <curve name="position.x">-2.187734,-2.19,-2.19,-0.89,0.71,2.55,4.59,6.75,8.99,11.26,13.49,15.63,17.63,19.43,20.97,22.21,23.03,23.31,23.20,22.87,22.48,22.20,22.21,22.67,23.69,25.13,26.79,28.48,30.01,31.18,31.57,-2.93</curve>
+            <curve name="position.y">-3.4,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40</curve>
+            <curve name="position.z">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</curve>
+          </animations>
+        </object>
+      </screen>
+      <screen name="" aspect="1.78">
+        <projection_matrix>0.1126214,0,0,0,0,0.2,0,0,0,0,-0.01,0,0,0,0,1</projection_matrix>
+        <view_matrix>1,0,0,0,0,1,0,0,0,0,-1,-10,0,0,0,1</view_matrix>
+        <object name="shiping-16-9-1" type="mesh" mesh_id="0" id="2" material_id="0">
+          <transform position="0,0,1" scale="17.94359,10.21873,1" rotation="0,0,0,1" />
+        </object>
+        <object name="shiping-16-9-2" type="mesh" mesh_id="0" id="3" material_id="1">
+          <transform position="-2.93063,-3.4,0" scale="27.72219,34.77508,1" rotation="0,0,-0.3826835,0.9238795" />
+          <animations>
+            <curve name="position.x">-2.187734,-2.19,-2.19,-0.89,0.71,2.55,4.59,6.75,8.99,11.26,13.49,15.63,17.63,19.43,20.97,22.21,23.03,23.31,23.20,22.87,22.48,22.20,22.21,22.67,23.69,25.13,26.79,28.48,30.01,31.18,31.57,-2.93</curve>
+            <curve name="position.y">-3.4,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40</curve>
+            <curve name="position.z">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</curve>
+          </animations>
+        </object>
+      </screen>
+      <screen name="" aspect="0.75">
+        <projection_matrix>0.2665406,0,0,0,0,0.2,0,0,0,0,-0.01,0,0,0,0,1</projection_matrix>
+        <view_matrix>1,0,0,0,0,1,0,0,0,0,-1,-10,0,0,0,1</view_matrix>
+        <object name="shiping-16-9-1" type="mesh" mesh_id="0" id="4" material_id="0">
+          <transform position="-3.19,0,1" scale="17.94359,10.21873,1" rotation="0,0,0,1" />
+        </object>
+        <object name="shiping-16-9-2" type="mesh" mesh_id="0" id="5" material_id="1">
+          <transform position="-6.12063,-3.4,0" scale="27.72219,34.77508,1" rotation="0,0,-0.3826835,0.9238795" />
+          <animations>
+            <curve name="position.x">-5.377734,-5.38,-5.38,-4.08,-2.48,-0.64,1.40,3.56,5.80,8.07,10.30,12.44,14.44,16.24,17.78,19.02,19.84,20.12,20.01,19.68,19.29,19.01,19.02,19.48,20.50,21.94,23.60,25.29,26.82,27.99,28.38,-6.12</curve>
+            <curve name="position.y">-3.4,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40</curve>
+            <curve name="position.z">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</curve>
+          </animations>
+        </object>
+      </screen>
+      <screen name="" aspect="0.56">
+        <projection_matrix>0.3551637,0,0,0,0,0.2,0,0,0,0,-0.01,0,0,0,0,1</projection_matrix>
+        <view_matrix>1,0,0,0,0,1,0,0,0,0,-1,-10,0,0,0,1</view_matrix>
+        <object name="shiping-16-9-1" type="mesh" mesh_id="0" id="6" material_id="0">
+          <transform position="-3.19,0,1" scale="17.94359,10.21873,1" rotation="0,0,0,1" />
+        </object>
+        <object name="shiping-16-9-2" type="mesh" mesh_id="0" id="7" material_id="1">
+          <transform position="-6.12063,-3.4,0" scale="27.72219,34.77508,1" rotation="0,0,-0.3826835,0.9238795" />
+          <animations>
+            <curve name="position.x">-5.377734,-5.38,-5.38,-4.08,-2.48,-0.64,1.40,3.56,5.80,8.07,10.30,12.44,14.44,16.24,17.78,19.02,19.84,20.12,20.01,19.68,19.29,19.01,19.02,19.48,20.50,21.94,23.60,25.29,26.82,27.99,28.38,-6.12</curve>
+            <curve name="position.y">-3.4,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40</curve>
+            <curve name="position.z">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</curve>
+          </animations>
+        </object>
+      </screen>
+      <screen name="" aspect="1.00">
+        <projection_matrix>0.2,0,0,0,0,0.2,0,0,0,0,-0.01,0,0,0,0,1</projection_matrix>
+        <view_matrix>1,0,0,0,0,1,0,0,0,0,-1,-10,0,0,0,1</view_matrix>
+        <object name="shiping-16-9-1" type="mesh" mesh_id="0" id="8" material_id="0">
+          <transform position="0,0,1" scale="17.94359,10.21873,1" rotation="0,0,0,1" />
+        </object>
+        <object name="shiping-16-9-2" type="mesh" mesh_id="0" id="9" material_id="1">
+          <transform position="-2.93063,-3.4,0" scale="27.72219,34.77508,1" rotation="0,0,-0.3826835,0.9238795" />
+          <animations>
+            <curve name="position.x">-2.187734,-2.19,-2.19,-0.89,0.71,2.55,4.59,6.75,8.99,11.26,13.49,15.63,17.63,19.43,20.97,22.21,23.03,23.31,23.20,22.87,22.48,22.20,22.21,22.67,23.69,25.13,26.79,28.48,30.01,31.18,31.57,-2.93</curve>
+            <curve name="position.y">-3.4,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40,-3.40</curve>
+            <curve name="position.z">0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</curve>
+          </animations>
+        </object>
+      </screen>
+    </screens>
+  </scene>
+  <meshes>
+    <mesh id="0" vertex_count="4" triangle_count="2">
+      <vertices>-0.5,-0.5,-3.061617E-17,0.5,0.5,3.061617E-17,0.5,-0.5,-3.061617E-17,-0.5,0.5,3.061617E-17</vertices>
+      <uv>0,0,1,1,1,0,0,1</uv>
+      <triangles>0,1,2,1,0,3</triangles>
+    </mesh>
+  </meshes>
+</root>

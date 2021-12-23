@@ -1,0 +1,24 @@
+http://cdn-3s.mobvista.com/upload/default/5b45b4da2668f.jpg?p1=668386.12476&p2=fe7dc7994bf19428b85d2c9c3f783fb19f443013a79f33c1ba017b46c31f05f5
+GET
+0
+HTTP/1.1 200 OK
+19
+x-amz-id-2: 62vlGcwbhgs8tdAxLL1XCRYdaSUWo/Gvl6NDNDekt4ORSz+FBhUTgTs+05YUOH7H1UegIwNK4HM=
+x-amz-request-id: EA217F578A2DD099
+Last-Modified: Wed, 11 Jul 2018 07:42:19 GMT
+ETag: "e463749b4e930e468a8f684513d5cfb0"
+x-amz-version-id: LSlAphoWC_1yl1lcMge21M1GYihE2u6P
+Content-Type: image/jpeg
+Server: AmazonS3
+Content-Length: 30713
+Accept-Ranges: bytes
+Date: Thu, 12 Jul 2018 09:43:26 GMT
+Via: 1.1 varnish
+Age: 32125
+Connection: keep-alive
+X-Served-By: cache-sin18021-SIN
+X-Cache: HIT
+X-Cache-Hits: 25
+X-Timer: S1531388606.149522,VS0,VE0
+OkHttp-Sent-Millis: 1531388594684
+OkHttp-Received-Millis: 1531388594742

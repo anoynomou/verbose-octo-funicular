@@ -1,0 +1,20 @@
+http://cdn.pubnative.net/games/promo_images_landscape/001/005/165/dimension_1200x627.jpg?aid=1014255&t=20160622183529
+GET
+0
+HTTP/1.1 200 OK
+15
+Date: Thu, 12 Jul 2018 09:25:07 GMT
+Content-Type: image/jpeg
+Content-Length: 30012
+Connection: keep-alive
+x-amz-id-2: QVzx4V3OY3j5QSHiGA8mlMZNgNFavYRtLP8EC2ijaZ+egwUoUWiHN+xytqovA+C0lrsbGmP/SaM=
+x-amz-request-id: EC937618ED195E00
+Last-Modified: Wed, 22 Jun 2016 18:35:34 GMT
+ETag: "9303d7c6e176c599e5fa48784562001d"
+x-amz-version-id: null
+Server: NetDNA-cache/2.2
+Access-Control-Allow-Origin: *
+X-Cache: HIT
+Accept-Ranges: bytes
+OkHttp-Sent-Millis: 1531387495224
+OkHttp-Received-Millis: 1531387495431

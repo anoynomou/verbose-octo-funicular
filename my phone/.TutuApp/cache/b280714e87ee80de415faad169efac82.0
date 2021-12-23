@@ -1,0 +1,18 @@
+http://passport.tutuapp.com/ucenter/avatar.php?uid=270971
+GET
+0
+HTTP/1.1 301 Moved Permanently
+13
+Server: NWS_Oversea_AP
+Connection: keep-alive
+Date: Fri, 31 Aug 2018 17:37:04 GMT
+Cache-Control: must-revalidate, no-cache
+Last-Modified: Sat, 01 Sep 2018 01:37:05 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Location: http://passport.tutuapp.com/ucenter//images/noavatar_middle.gif
+Set-Cookie: SERVERID=f9df0806c3b21aaa5be540438544fec4|1535737025|1535737025;Path=/
+X-Daa-Tunnel: hop_count=1
+X-NWS-LOG-UUID: e7bd9b02-e171-4d58-a619-92fbe43c3a39 5b2e8d0495ca804150daa1abf2a2abbd
+OkHttp-Sent-Millis: 1535736998045
+OkHttp-Received-Millis: 1535736998878

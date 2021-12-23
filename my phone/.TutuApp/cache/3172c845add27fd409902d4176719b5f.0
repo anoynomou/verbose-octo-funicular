@@ -1,0 +1,20 @@
+http://cdn.pubnative.net/games/icons/001/005/128/dimension_150x150.jpg?aid=1014255&t=20180713042557
+GET
+0
+HTTP/1.1 200 OK
+15
+Date: Fri, 13 Jul 2018 09:25:34 GMT
+Content-Type: image/jpeg
+Content-Length: 3359
+Connection: keep-alive
+x-amz-id-2: 9ZGLBSvAVv3Q/ubUjZghEge0rZyna7yTfGVkUb4amZn+DakF+YWCH0uwgwru/W2/irgQlCh4oJs=
+x-amz-request-id: 445DC177B0334752
+Last-Modified: Fri, 13 Jul 2018 04:26:04 GMT
+ETag: "5667318984421d506fe2fb5f5173d35d"
+x-amz-version-id: null
+Server: NetDNA-cache/2.2
+Access-Control-Allow-Origin: *
+X-Cache: HIT
+Accept-Ranges: bytes
+OkHttp-Sent-Millis: 1531473922528
+OkHttp-Received-Millis: 1531473922645
