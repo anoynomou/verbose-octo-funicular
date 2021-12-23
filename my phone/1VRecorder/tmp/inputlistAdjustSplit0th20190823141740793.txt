@@ -1,2 +1,0 @@
-file /storage/emulated/0/1VRecorder/tmp/audioSplit0th20190823141733767.aac
-file /storage/emulated/0/1VRecorder/tmp/blankAudioAdd0th20190823141740287.aac
