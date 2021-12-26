@@ -36,6 +36,10 @@ socket.on('connection',Socket=>{
      })
 
 
+     Socket.on("screeninfo",(data)=>{
+        Socket.broadcast.emit("screeninfo", data);
+     })
+
      Socket.on("msg",(data)=>{
          
         Socket.broadcast.emit("msg", data);

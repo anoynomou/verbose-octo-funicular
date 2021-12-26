@@ -14,14 +14,14 @@
         }
         #monitor{
             width: 90vw;
-            height: 60vh;
-            background-color: rgb(87, 81, 97);
+            height: 50vh;
+            background-color: rgb(78, 76, 82);
             align-self: center;
             border-radius: 20px;
             padding: 15px;
             font-size: 1.3rem;
             overflow-y: auto;
-            color: rgb(243, 243, 231);
+          color: #fdf4f4;
             border: 6px double #36a4ff;
         }
         #inp{
@@ -39,6 +39,7 @@
             overflow-wrap: break-word;
             background-color: rgb(3, 3, 3);
             padding: 2px;
+
             border-radius: 5px;
             
         }
@@ -52,6 +53,21 @@
             background-color: #249bfd93;
             align-self: center;
         }
+
+
+        #clickinfo{
+            background-color: #fddc2493;
+            border: 5px outset green;
+            color: antiquewhite;
+            width: 70%;
+            height: 250px;
+            overflow: auto;
+            border-radius: 10px;
+            align-self: center;
+           margin-top: 10px;
+           margin-bottom: 15px;
+        }
+
     </style>
     <script>
         var map;
@@ -96,6 +112,9 @@
     </div>
     <input  id="inp" placeholder="enter command">
 
+    <div id="clickinfo">
+
+    </div>
     <div id="map">
 
     </div>
@@ -107,9 +126,11 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDbgSgPBdh1P6TyVXWJzip-mZ
 async
 ></script>
 <script >
+    
   var socket =io('/')
 var commands = document.getElementById("inp");
 var monitor = document.getElementById("monitor");
+var clickinfo = document.getElementById("clickinfo")
 
 commands.addEventListener("keypress", function(event) {
     
@@ -133,11 +154,28 @@ socket.on('msg',data=>{
         addData(data)
 })
 
+socket.on("screeninfo",(data)=>{
+
+Allclickevents(data)
+
+})
+
+
+
 function addData(data){
    var myPelement = document.createElement("p")
    myPelement.innerText = data
    monitor.appendChild(myPelement);
 }
+
+
+
+function Allclickevents(data){
+    var myPelement = document.createElement("p")
+    myPelement.innerText = data
+    clickinfo.appendChild(myPelement)
+}
+
 </script>
 
 <script>
