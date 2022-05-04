@@ -2,9 +2,10 @@ var express = require('express')
 var App = express()
 var Bodyparser = require('body-parser')
 var {rateLimit} = require("express-rate-limit")
-require("dotenv").config()
+
 var PORT =  process.env.PORT || 4000 
 
+require("dotenv").config({path:"./MYDATA.env"})
 const LimitRuls = rateLimit({
   windowMs: 3 * 60 * 1000, // 15 minutes
 	max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
@@ -31,6 +32,7 @@ const  FirebaseStorage = require('firebase/storage')
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
   authDomain: process.env.AUTH_DOMAIN,
