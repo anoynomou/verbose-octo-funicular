@@ -2,6 +2,8 @@ var express = require('express')
 var App = express()
 var Bodyparser = require('body-parser')
 var {rateLimit} = require("express-rate-limit")
+require("dotenv").config()
+var PORT =  process.env.PORT || 4000 
 
 const LimitRuls = rateLimit({
   windowMs: 3 * 60 * 1000, // 15 minutes
@@ -9,12 +11,12 @@ const LimitRuls = rateLimit({
 	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
 	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 })
-
+App.use(LimitRuls)
 App.use(Bodyparser.json())
 
 App.use(Bodyparser.urlencoded({ extended: true,limit:"25MB" })); 
 var path = require('path')
-require("dotenv").config()
+
 
 
 
@@ -43,7 +45,7 @@ const firebaseapp = initializeApp(firebaseConfig);
 const firebasestorage = FirebaseStorage.getStorage(firebaseapp)
 const firebasedatabase = FirbaseDatabase.getDatabase(firebaseapp)
 
-var PORT =  process.env.PORT ||3000 
+
 var http = require('http').createServer(App)
 
 var socket = require('socket.io')(http)
