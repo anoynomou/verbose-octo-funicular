@@ -3,13 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DarkFox</title>
 
-    <link rel="icon" href="https://www.freeiconspng.com/thumbs/android-icon/green-android-icon-31.png">
-
+    <link rel="icon" href="https://www.nicepng.com/png/full/111-1111704_rat-logo-newnew-roblox-logo-id-list.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="socket.io/socket.io.js" ></script>
 
     <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         body{
             margin: 0;
             display: flex;
@@ -18,14 +23,22 @@
         }
         #monitor{
             width: 90vw;
+            margin: 7px;
             height: 50vh;
-            background-color: rgb(78, 76, 82);
+            background-color: rgb(45, 44, 49);
             align-self: center;
             border-radius: 20px;
-            padding: 15px;
+            padding: 12px;
+            
+            display: flex;
+            flex-direction: column;
+            
             font-size: 1.3rem;
-            overflow-y: auto;
-          color: #fdf4f4;
+            overflow-y:auto;
+            overflow-x: hidden;
+          color: #f1e4e4;
+          
+          
             border: 6px double #36a4ff;
         }
         #inp{
@@ -34,6 +47,7 @@
             border-radius: 10px;
             padding: 5px;
             width: 90vw;
+            height: 2.2rem;
             align-self: center;
             margin-top: 15px;
             color: aliceblue;
@@ -72,58 +86,95 @@
            margin-bottom: 15px;
 
         }
-        #con{
+        #delet{
+
+display: flex;
+
+flex: 1;
+order: 2;
+background-color: #242a3362;
+border-radius: 10px;
+flex-direction: column;
+justify-self: center;
+flex-grow: 1;
+margin-left: 10px;
+align-self: center;
+align-items: center;
+        }
+        #con {
 
             display: flex;
+            flex: 1;
             padding: 10px;
-            margin: 15px;
-            border: 1px solid rgb(224, 221, 221);
-            background-color: #6b727944;
+            margin: 10px;
+            border: 1.5px solid #2cee2c;
+            background-color: #f4f7fa44;
             border-radius: 5px;
+          
         }
+
+
+
+        #del{
+            display: flex;
+            flex: 1;    
+           
+            border: 1.5px solid rgba(255, 246, 246, 0.863);
+            margin: 10px;
+            padding: 10px;
+            padding-left: 14px;
+            padding-right: 14px;
+            border-radius: 5px;
+            background-color: #d3e4e949;
+        }
+        
+
         #quary{
 display: flex;
 width: 90%;
+
+flex-direction: row;
 align-self: center;
 background-color: rgba(68, 142, 253, 0.658);
-height: 250px;
+
 border-bottom-left-radius: 35px;
 border-bottom-right-radius: 35px;
 margin-bottom: 50px;
-padding: 10px;
+padding: 13px;
+
 border: 2px solid snow;
         }
 
         #find{
-flex: 1;
+
 justify-self: center;
 align-self: center;
 justify-content: center;
 align-content: center;
 display: flex;
+flex: 1;
+order: 1;
+
+padding-right: 10px;
 flex-direction: column;
 border-right: 1px solid greenyellow;
         }
-        #delet{
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-self: center;
-align-self: center;
-align-items: center;
-        }
+ 
         #allids{
             background-color: #66839b;
-            width: 80%;
-            height: 180px;
+            display: flex;
+          flex-direction: column;
+            width: 55vw;
+            height: 12rem;
             align-self: center;
             margin: 7px;
             padding: 5px;
             overflow: auto;
             border: 1px solid seashell;
             border-radius: 10px;
-        display: flex;
-        flex-direction: column;
+            overflow-y: scroll;
+ padding-bottom: 10px;
+       
         }
 
 
@@ -136,6 +187,61 @@ letter-spacing: 3px;
 color: rgb(66, 63, 63);
             align-self: center;
         }
+        #menu{
+    background-color: #8887d8;position: sticky;border: 1px solid whitesmoke; top: 20px;right: 15px;  height: 2.5rem;  padding: 5px;border-radius: 5px;
+     display: flex;align-self: flex-end;margin-top: -42px;flex-direction: row-reverse;
+     opacity: 0.5;
+     align-items: center;justify-content: space-evenly;
+    
+}
+#menu:hover{
+    opacity: 1;
+    
+    
+    
+}
+
+div[name="option_"]{
+    transition: 100ms;
+}
+@media only screen and (min-width: 960px) {
+div[name="option_"]:hover{
+   background-color: #ffffff;
+   border: 1px solid green;
+   padding: 4px;
+   box-shadow: 1px 2px 15px rgba(255, 251, 251, 0.404);
+}
+}
+
+        @media only screen and (max-width: 960px) {
+#find{
+    border-bottom: 1px solid greenyellow;
+    border-right: unset;
+  
+   padding-bottom: 25px;
+   
+   
+}
+#delet{
+  
+   margin-left: 0px;
+   margin-top: 10px;
+}
+
+#quary{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#allids{
+    padding: 2px;
+  width: 70vw;
+}
+#menu{
+    opacity: 0.9;
+}
+
+}
+
 
 
     </style>
@@ -175,14 +281,24 @@ color: rgb(66, 63, 63);
 <body>
     
 
+    <div id="menu" >
+    <div  onclick="OnMenuClick()" style="border-radius: 4px;background-color: #ced1ce;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;"><i style="font-size: 19px;color: #363434;"   class="fas fa-bars"></i></div>
 
-    <div id="quary">
+    <div onclick="window.open('/image', '_blank');"  name="option_"  style="border-radius: 4px;background-color: #d9f8d9;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2e2727;" class="fas fa-images"></i></div>
+    <div onclick="window.open('/info', '_blank');" name="option_"   style="border-radius: 4px;background-color: #e6ffe6;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #362f2f;"  class="fa-solid fa-circle-info"></i></div>
+    <div  name="option_"  style="border-radius: 4px;background-color: #defdde;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2c2424;"  class="fas fa-cloud-download"></i></div>
+</div>
+    <div  id="quary">
+
+
         <div id="find">
             
             <div id="allids">
-                <h3 style="align-self: center;background-color: rgba(172, 243, 219, 0.938);padding: 3px;border-radius: 2px;">Devices</h3>
+                <h3 style="align-self: center;background-color: rgba(172, 243, 219, 0.938);padding: 3px;border-radius: 2px;"><i style="margin-right: 10px;" class="fa-solid fa-mobile-screen-button"></i>Devices</h3>
+                <i style="background-color: #89a7c09c;padding: 2px;border-radius: 3px;align-self: center;font-size: 19px;margin: 5px;">all id's</i>
+                
                 <div id="every_ides" style="width: 93%;display: flex;flex-direction: column;align-self: center;padding: 2px;">
-                   <i style="background-color: #89a7c09c;padding: 2px;">all id's</i>
+                 
                    
                 </div>
 
@@ -194,33 +310,33 @@ color: rgb(66, 63, 63);
         <div id="delet">
             <div id="del">
                 <input id="delet_id" placeholder="enter id">
-                <button id="deletd" style="background-color: rgba(240, 80, 80, 0.753);padding: 5px;border-radius: 4px;color: #fdf4f4;margin: 3px;">delete</button>
+                <button id="deletd" style="background-color: rgba(240, 80, 80, 0.753);padding: 5px;border-radius: 4px;color: #fdf4f4;margin: 0.1rem;"> delete</button>
             </div>
 
             <div id="con">
                 <input id="roomid" placeholder="enter your user id">
-                <button onclick="joinRoom()" style="background-color: rgba(86, 67, 252, 0.89);border-radius: 5px;padding: 5px;color: #fdf4f4;margin-left: 3px;">connect</button>
+                <button onclick="joinRoom()" style="background-color: rgba(86, 67, 252, 0.89);border-radius: 5px;padding: 5px;color: #fdf4f4;margin: 0.1rem;">connect</button>
             </div>
         </div>
 
 
     </div>
 
+   
 
 
 
 
-
-    <div id="monitor">
+    <div id="monitor" >
          
-         <p style="text-align: center;background-color: #36a5ff9a;"> Wellcome to rat service</p>
+         <p style="text-align: center;background-color: #36a5ff9a;"><i style="padding: 4px;" class="fas fa-desktop"></i> Monitor</p>
 
  
     </div>
     <input  id="inp" placeholder="enter command">
 
     <div id="clickinfo">
-<h4 style="text-align: center;background-color: rgb(157, 187, 187);color: rgb(255, 255, 255);">click info</h4>
+<h4 style="text-align: center;background-color: rgb(157, 187, 187);color: rgb(255, 255, 255);"><i style="padding: 7px;color: aliceblue;" class="fa-solid fa-hand-pointer"></i> click info</h4>
     </div>
     <div id="map">
 
@@ -248,8 +364,15 @@ var delet_button = document.getElementById("deletd")
 
 commands.addEventListener("keypress", function(event) {
     
-
-    if (event.keyCode == 13){
+     
+    if(commands.value.toString() == "clear"){
+        
+     for(var elem of document.getElementsByName("monitordata")){
+         elem.remove()
+     }
+      commands.value = ""
+    }
+    else if (event.keyCode == 13){
         
         socket.emit("msg",String(roomnumber.value),commands.value.toString())
         commands.value = ""
@@ -261,8 +384,8 @@ commands.addEventListener("keypress", function(event) {
 
 
 socket.on("location",data=>{
-   var mylocation =  JSON.parse(data)
-   changelocation(mylocation.latitude,mylocation.longitude)
+   
+   changelocation(data.latitude,data.longitude)
 })
 
 
@@ -303,9 +426,31 @@ xhr.send()
 
 
 
+
+function OnMenuClick(){
+   
+document.getElementsByName("option_").forEach((element)=>{
+ 
+   
+    if(element.style.display != "none"){
+
+        element.style.display = "none"
+        
+    }else{element.style.display = "flex";}
+})
+}
+
+
+
 function addData(data){
    var myPelement = document.createElement("p")
+   myPelement.setAttribute("name","monitordata")
    myPelement.innerText = data
+   myPelement.style.width = '98%'
+  myPelement.style.alignSelf = "center"
+   myPelement.style.marginBottom="10px"
+   myPelement.style.marginTop="10px"
+   myPelement.style.padding="10px"
    monitor.appendChild(myPelement);
 }
 
@@ -313,8 +458,9 @@ function addData(data){
 function joinRoom(){
 
 
-if(String(roomnumber.value).length > 1){
-    socket.emit("join_room",String(roomnumber.value))
+if(String(roomnumber.value).trim().length > 3){
+    socket.emit("join_room",String(roomnumber.value).trim())
+    
 }
     else{alert("value mising")}
 }
@@ -331,7 +477,7 @@ function Allclickevents(data){
 find_button.addEventListener("click",()=>{
 
    getallids("/id/get/notrequire").then((val)=>{
-    document.getElementsByName("I4").forEach((elem)=>elem.remove())
+document.getElementById("every_ides").innerHTML=""
     addIDinidbox("every_ides",JSON.parse(val))
    }).catch((err)=>{
        console.log(err)
@@ -344,9 +490,15 @@ function addIDinidbox(idname,data=[]){
     if(data.length >0){
     data.forEach((element)=>{
         var item = document.createElement("i")
+    
         item.innerText=element;
-        item.style.backgroundColor="#f1f1f1"
-        item.style.width="100%"
+        item.style.backgroundColor="rgba(249, 249, 240,0.4)"
+        item.style.width="90%"
+        item.style.alignSelf="center"
+        item.style.borderRadius ="4px"
+        item.style.border ="2px solid green"
+        item.style.padding = "5px"
+        item.style.margin = "3px"
         item.style.textAlign="center"
         item.setAttribute("name","I4")
         document.getElementById(idname).appendChild(item)
@@ -359,8 +511,10 @@ delet_button.addEventListener("click",()=>{
     var values = document.getElementById("delet_id")
 
     getallids(`/id/delet/${values.value?values.value:"no value pass"}`).then((val)=>{
-    document.getElementsByName("I4").forEach((elem)=>elem.remove())
-    addIDinidbox(JSON.parse(val))
+    
+        document.getElementById("every_ides").innerHTML=""
+    addIDinidbox("every_ides",JSON.parse(val))
+    values.innerHTML =""
    }).catch((err)=>{
        console.log(err)
    })
