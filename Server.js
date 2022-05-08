@@ -86,7 +86,7 @@ App.get("/image",UserAuth,(req,res)=>{
 
 App.post("/login",(req,res)=>{
   
-  if(req.body.name === "admin" && req.body.password === "password"){
+  if(req.body.name === "admin" && req.body.password === "12733245"){
     res.send({"status":"Access Granted"}).status(200)
   }
   else{
@@ -272,7 +272,7 @@ function AllFilePath(){
 }
 
 function UserAuth(req,res,next){
-  if(req.query.name == "admin" && req.query.password == "password"  ){
+  if(req.query.name == "admin" && req.query.password == "12733245"  ){
     
     next()
 
