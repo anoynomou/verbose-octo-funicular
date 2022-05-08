@@ -11,6 +11,7 @@ const LimitRuls = rateLimit({
 	max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
 	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
 	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+  message:"<h1>429 ERROR : IP BLOCK</h1>"
 })
 App.use(LimitRuls)
 App.use(Bodyparser.json())
@@ -22,10 +23,12 @@ var path = require('path')
 
 
 
+
 // Import the functions you need from the SDKs you need
 var {initializeApp} =require('firebase/app')
 const FirbaseDatabase = require('firebase/database');
 const  FirebaseStorage = require('firebase/storage')
+
 
 
 
@@ -68,16 +71,45 @@ var allrooms =[]
 
 
 
-App.get("/",(req,res)=>{
+App.get("/",UserAuth,(req,res)=>{
     res.sendFile(path.join(__dirname,"views","controller.html"))
+    
 })
 
-App.get("/info",(req,res)=>{
+App.get("/info",UserAuth,(req,res)=>{
+ console.log("info  (name) ->"+req.headers.name)
   res.sendFile(path.join(__dirname,"views","information.html"))
 })
-App.get("/image",(req,res)=>{
+App.get("/image",UserAuth,(req,res)=>{
   res.sendFile(path.join(__dirname,"views","images.html"))
 })
+
+App.post("/login",(req,res)=>{
+  
+  if(req.body.name === "admin" && req.body.password === "password"){
+    res.send({"status":"Access Granted"}).status(200)
+  }
+  else{
+    
+    res.send({"data":"A Denied"}).status(404)
+  }
+})
+
+App.get("/download/:file",(req,res)=>{
+  if(req.params.file == "0"){
+    res.sendFile(path.join(__dirname,"views","app-release.apk"))
+  }else{
+    res.sendFile(path.join(__dirname,"views","download.html"))
+  }
+  
+
+  
+})
+
+
+
+
+
 
 App.post("/id/:mod/:id",(req,res)=>{
   if(req.params.mod == "get"){
@@ -110,6 +142,7 @@ AllFilePath().then((data)=>{
 
 App.post("/image",(req,res)=>{
   if(req.body.image != null&&req.body.name != null){
+    
     const buffer = Buffer.from(req.body.image, "base64");
     var StorageSize = TotalStorage()
  
@@ -236,7 +269,18 @@ function AllFilePath(){
     })
 
 
-    }
+}
+
+function UserAuth(req,res,next){
+  if(req.query.name == "admin" && req.query.password == "password"  ){
+    
+    next()
+
+  }else{
+  
+    res.sendFile(path.join(__dirname,"views","login.html"))
+  }
+}
 
     
     

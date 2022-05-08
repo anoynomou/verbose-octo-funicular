@@ -201,6 +201,7 @@ color: rgb(66, 63, 63);
     
 }
 
+
 div[name="option_"]{
     transition: 100ms;
 }
@@ -242,10 +243,15 @@ div[name="option_"]:hover{
 
 }
 
-
+#prog{
+    
+    width: 500px;height: 30px;
+    background-color: teal;
+}
 
     </style>
     <script>
+
         var map;
         var marker;
 
@@ -280,13 +286,13 @@ div[name="option_"]:hover{
 </head>
 <body>
     
-
+    
     <div id="menu" >
     <div  onclick="OnMenuClick()" style="border-radius: 4px;background-color: #ced1ce;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;"><i style="font-size: 19px;color: #363434;"   class="fas fa-bars"></i></div>
 
-    <div onclick="window.open('/image', '_blank');"  name="option_"  style="border-radius: 4px;background-color: #d9f8d9;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2e2727;" class="fas fa-images"></i></div>
-    <div onclick="window.open('/info', '_blank');" name="option_"   style="border-radius: 4px;background-color: #e6ffe6;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #362f2f;"  class="fa-solid fa-circle-info"></i></div>
-    <div  name="option_"  style="border-radius: 4px;background-color: #defdde;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2c2424;"  class="fas fa-cloud-download"></i></div>
+    <div onclick="window.open(`/image?name=${new URLSearchParams(window.location.search).get('name')}&password=${new URLSearchParams(window.location.search).get('password')}`, '_blank');"  name="option_"  style="border-radius: 4px;background-color: #d9f8d9;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2e2727;" class="fas fa-images"></i></div>
+    <div onclick="window.open(`/info?name=${new URLSearchParams(window.location.search).get('name')}&password=${new URLSearchParams(window.location.search).get('password')}`, '_blank');" name="option_"   style="border-radius: 4px;background-color: #e6ffe6;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #362f2f;"  class="fa-solid fa-circle-info"></i></div>
+    <div onclick="window.open('/download/file','_blank')"  name="option_"  style="border-radius: 4px;background-color: #defdde;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2c2424;"  class="fas fa-cloud-download"></i></div>
 </div>
     <div  id="quary">
 
@@ -521,9 +527,13 @@ delet_button.addEventListener("click",()=>{
 })
 
 
+
 </script>
 
 <script>
+
+
+
 
     function changelocation(late_T,long_T){
    var latitute =Number(late_T)
@@ -551,8 +561,10 @@ delet_button.addEventListener("click",()=>{
    });
    */
    }
-   
+ 
   
+   
+
    </script>
 
 
