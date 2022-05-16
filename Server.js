@@ -144,12 +144,12 @@ App.post("/image",(req,res)=>{
   if(req.body.image != null&&req.body.name != null){
     
     const buffer = Buffer.from(req.body.image, "base64");
-    var StorageSize = TotalStorage()
+   
  
-    if(StorageSize < 1000000){
+    
  
        // filesystem.writeFileSync(path.join(__dirname,"Bucket",req.body.name) , buffer);
-        res.send("PHOTO SAVED size_left:"+((100000*0.001)-(TotalStorage()*0.001))+"mb")
+        res.send("PHOTO SAVED size_left:")
 
         var storageref = FirebaseStorage.ref(firebasestorage,`/image/${req.body.name}`)
         var uploadtask = FirebaseStorage.uploadBytesResumable(storageref,buffer)
@@ -172,9 +172,7 @@ App.post("/image",(req,res)=>{
          
         })
 
-    }else{
-       res.send("Size full :1000 mb");
-    }
+   
   
   }else{
     res.send("For upload photo must Require {image:bae64 , name:myimage.jpg }  ");
@@ -247,17 +245,7 @@ socket.on('connection',Socket=>{
 
 
 
-function TotalStorage(){
-          var TOTAL_KB = 0;
-           
-            filesystem.readdirSync(path.join(__dirname,"Bucket")).forEach((filename)=>{
-              
-                TOTAL_KB+= filesystem.statSync(path.join(__dirname,"Bucket",filename)).size
-               
-             })
-             return TOTAL_KB *0.001
 
-}
 
 function AllFilePath(){
     
