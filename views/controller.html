@@ -359,7 +359,7 @@ div[name="option_"]:hover{
     <div id="monitor" >
          
          <p style="text-align: center;background-color: #36a5ff9a;"><i style="padding: 4px;" class="fas fa-desktop"></i> Monitor</p>
-
+        
  
 
 
@@ -419,9 +419,8 @@ commands.addEventListener("keypress", function(event) {
      
     if(commands.value.toString() == "clear"){
         
-     for(var elem of document.getElementsByName("monitordata")){
-         elem.remove()
-     }
+
+     monitor.innerHTML =""
       commands.value = ""
     }
     else if (event.keyCode == 13){
