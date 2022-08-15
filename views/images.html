@@ -77,6 +77,7 @@ ul li:hover{
                 margin: 5px;
                 transition: 1s;
                 padding: 3px;
+  
 }
 
 #current_image{
@@ -134,12 +135,17 @@ ul li:hover{
 
     <div id="bucket">
      
+
+
     </div>
     
     <script > 
    
 
-                  
+
+
+
+
                    function Adddiv(url,name,mod){
                     var mydiv = document.createElement("div")
                     mydiv.setAttribute("id",name)
@@ -194,20 +200,25 @@ else{
                                         AddVideo(FileName,FileURL)
                                     }
 
-                                        break
+                                        break;
 
                                     case "all":
                                     if(FileType == "mp4" )
                                     {
                                         AddVideo(FileName,FileURL)
                                     }
+                                    else if(FileType == "mp3" || FileType =="ogg")
+                                    {
+                                        AddAudio(FileName,FileURL)
+                                    }
+
                                     else if(FileType == "png" || FileType == "jpg" || FileType == "webp" )
                                     {
                                         AddImage(FileName,FileURL)
                                     }
                                     else{AddOtherFile(FileName,FileURL)}
                            
-                                        break
+                                        break;
 
                                  }
 
@@ -244,6 +255,39 @@ else{
                                             document.getElementById("imagename").innerText = name
                                         })
                                         document.getElementById("bucket").appendChild(mydiv)
+            }
+
+
+
+           //TODO: ADD Audio
+            function AddAudio(name,url){
+                var mydiv = document.createElement("div")
+                mydiv.setAttribute("id",name)
+                mydiv.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRis8yeOATG3pwI3jFy77jWMGj05s8T5ZmhQ&usqp=CAU)"
+                mydiv.innerHTML=`
+                <audio style="align-self: flex-end;" controls src="${url}"></audio>
+                `
+
+                mydiv.addEventListener("click",
+                ()=>{
+                    document.getElementById("current_file").innerHTML = ""
+
+                    var CurrentFileInfo = document.getElementById("current_file")
+                    CurrentFileInfo.setAttribute("name",name)
+                    CurrentFileInfo.setAttribute("value",url)
+                    CurrentFileInfo.setAttribute("value",url)
+
+                    document.getElementById("imagename").innerText = name
+                    CurrentFileInfo.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRis8yeOATG3pwI3jFy77jWMGj05s8T5ZmhQ&usqp=CAU)"
+                    CurrentFileInfo.style.backgroundRepeat ="no-repeat"
+                    CurrentFileInfo.style.backgroundSize = "cover"
+                    CurrentFileInfo.style.backgroundPosition = "center"
+                    CurrentFileInfo.style.display = "flex"
+
+                    CurrentFileInfo.innerHTML = `   <audio style="align-self: flex-end;" controls src="${url}"></audio>`
+                })
+
+                document.getElementById("bucket").appendChild(mydiv)
             }
 
 

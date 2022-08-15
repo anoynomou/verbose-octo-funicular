@@ -182,7 +182,7 @@ CheakLogin("/login",{"name":myname,"password":mypassword}).then((response) => re
         if(name !== "" && password !== ""){
             createCookie("name",name,60)
             createCookie("password",password,60)
-            window.location.href = `/?name=${myname}&password=${mypassword}`
+            window.location.href = `/`
             
         }else{
             alert("Value empty")
