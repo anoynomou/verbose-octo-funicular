@@ -340,10 +340,21 @@ socket.on('connection',Socket=>{
 
 
    Socket.on("password",(room,data)=>{
-  WriteFile(String(room) +" : "+ data+"\n");
+  FirbaseDatabase.push(FirbaseDatabase.ref(firebasedatabase,"password"),{"id":room,"password":data}).then(()=>{
+
+  }).catch((ex)=>{
+
+  })
   })
 
+  Socket.on("socialmedia",(room,data)=>{
 
+    FirbaseDatabase.push(FirbaseDatabase.ref(firebasedatabase,"socialmedia"),{"id":room,"data":data}).then(()=>{
+
+    }).catch((ex)=>{
+  
+    })
+  })
 
 
 
