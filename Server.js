@@ -374,7 +374,7 @@ function AllFilePath(){
 }
 
 function UserAuth(req,res,next){
-  if(req.cookies.name == "admin" && req.cookies.password == "12733245"  ){
+  if(req.cookies.name == "admin" && req.cookies.password == "@12733245"  ){
     
     next()
 
