@@ -531,17 +531,45 @@ find_button.addEventListener("click",()=>{
 
    getallids("/id/get/notrequire").then((val)=>{
 document.getElementById("every_ides").innerHTML=""
+
+
    addIDinidbox("every_ides",JSON.parse(val))
   
    }).catch((err)=>{
-       console.log(err)
+       console.log("ERROR"+err)
    })
     
     
 })
 
-function addIDinidbox(idname,data=[]){
-    if(data.length >0){
+function addIDinidbox(idname,data){
+    
+
+    for (const [key, value] of Object.entries(data)) {
+  
+  var item = document.createElement("div")
+    
+       
+    item.style.backgroundColor="rgba(249, 249, 240,0.4)"
+    item.style.width="90%"
+    item.style.alignSelf="center"
+    item.style.borderRadius ="4px"
+    item.style.border ="2px solid green"
+    item.style.padding = "5px"
+    item.style.margin = "3px"
+    item.style.textAlign="center"
+    item.style.display = "flex"
+    item.style.alignItems ="center"
+    item.style.justifyContent = "space-between"
+    item.setAttribute("name","I4")
+    //item.innerText=element;
+    item.innerHTML = `<b>${value.name}</b> <b>ID:     ${key} </b> <div><button style="color:green;" onclick="editID('${value.name}','${key}')" id="edit"> Edit </button> <button value="${key}" id="copy" onclick="sclectID(this)"> Sclect </button></div>`
+     
+    document.getElementById(idname).appendChild(item)
+}
+
+
+/*
     data.forEach((element)=>{
         var item = document.createElement("div")
     
@@ -563,8 +591,9 @@ function addIDinidbox(idname,data=[]){
          
         document.getElementById(idname).appendChild(item)
     })
+    */
 }
-}
+
 
 
 function editID(name,id){

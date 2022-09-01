@@ -37,6 +37,9 @@ const { json } = require('body-parser')
 
 
 
+var {DataManager} = require("./database")
+
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
@@ -66,64 +69,30 @@ http.listen(PORT,()=>{
 })
 
 
+var datamanager  = new DataManager(FirbaseDatabase,firebasedatabase)
 
 
 
-var Id_Collection = []
+
+var Id_Collection = [{"name":"ANDROID 88","id":8565656566}]
 
 class  IdManager{
     setId(id,name){
 
-
-      var data = {id,name}
-      if(this.#hasSame(id) && name !== undefined){
-         Id_Collection.forEach((element,ind)=>{
-            if(element.id == id){
-                element.name = name
-            }
-        })
-      }
-      else if(this.#hasSame(id)){
-
-      }
-
-      else if(name !== undefined && id !== undefined){
-         var data = {name,id}
-         Id_Collection.push(data)
-
-     }
-
-     else if(name === undefined && id !== undefined){
-        var data = {name:"No name",id}
-        Id_Collection.push(data)
-     }
-
-     else{
-        console.log("Have one")
-     }
-
-
-
+datamanager.setID(id,name)
+    
     }
-
  
     deletId(id){
-    Id_Collection =   Id_Collection.filter((valu,index)=> valu.id !== id)
-
+   
+    datamanager.deletID(id)
     }
 
-    #hasSame(id){
-        var hassame = false
-         Id_Collection.forEach((data)=>{
-            if(data.id === id){
-                hassame = true
-            }
-         })
-         return hassame
-    }
  
     getid(){
-     return Id_Collection
+
+    return datamanager.getIDS()
+
     }
  
  }
@@ -132,7 +101,7 @@ class  IdManager{
 
 var idmanager = new IdManager()
 
-
+idmanager.setId("adhuihdjsdi","android 85")
 
 
 var allrooms =[]
@@ -187,20 +156,27 @@ App.post("/id/:mod/:id",(req,res)=>{
  
 
   if(req.params.mod == "get"){
-      
-      res.send(idmanager.getid()).status(200)
+      idmanager.getid().then((data)=>{
+        res.send(data).status(200)
+      })
+     
   }
 
   else if(req.params.mod == "set"){
       idmanager.setId(req.body.id,req.body.name)
-    res.send(idmanager.getid()).status(200)
+    idmanager.getid().then((data)=>{
+      res.send(data).status(200)
+    })
 }
 
 
   else if(req.params.mod == "delet"){
       console.log(req.params.id)
       idmanager.deletId(req.params.id)
-      res.send(idmanager.getid()).status(200)
+      idmanager.getid().then((data)=>{
+        res.send(data).status(200)
+      })
+     
       /*
       allrooms = allrooms.filter(value =>value != req.params.id.toString())
       res.send(allrooms).status(200)
