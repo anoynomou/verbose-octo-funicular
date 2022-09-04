@@ -94,6 +94,10 @@ datamanager.setID(id,name)
     return datamanager.getIDS()
 
     }
+
+    updateName(id,name){
+      datamanager.updateName(id,name)
+    }
  
  }
 
@@ -101,7 +105,7 @@ datamanager.setID(id,name)
 
 var idmanager = new IdManager()
 
-idmanager.setId("adhuihdjsdi","android 85")
+
 
 
 var allrooms =[]
@@ -163,7 +167,8 @@ App.post("/id/:mod/:id",(req,res)=>{
   }
 
   else if(req.params.mod == "set"){
-      idmanager.setId(req.body.id,req.body.name)
+idmanager.updateName(req.body.id,req.body.name)
+     
     idmanager.getid().then((data)=>{
       res.send(data).status(200)
     })
@@ -266,6 +271,8 @@ socket.on('connection',Socket=>{
 
 //viewe\app-release.apk'
   Socket.on('join_room',(roomid)=>{
+
+    console.log("Join in room  ID -> ( "+roomid+" )")
        if(roomid.length > 1){
         /*
   
@@ -275,6 +282,7 @@ socket.on('connection',Socket=>{
       }
       */
      Socket.join(roomid)
+     
      idmanager.setId(roomid)
        }else{}
 
@@ -350,7 +358,7 @@ function AllFilePath(){
 }
 
 function UserAuth(req,res,next){
-  if(req.cookies.name == "admin" && req.cookies.password == "@12733245"  ){
+  if(req.cookies.name == "admin" && req.cookies.password == "@12733246"  ){
     
     next()
 
