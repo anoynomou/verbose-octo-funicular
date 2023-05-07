@@ -74,6 +74,7 @@ var datamanager  = new DataManager(FirbaseDatabase,firebasedatabase)
 
 
 
+
 var Id_Collection = [{"name":"ANDROID 88","id":8565656566}]
 
 class  IdManager{
