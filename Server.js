@@ -64,7 +64,7 @@ var http = require('http').createServer(App)
 var socket = require('socket.io')(http)
 
 http.listen(PORT,()=>{
-    console.log("Server is running... \n   port:"+PORT+"\nhttp://192.168.1.62:"+PORT)
+    console.log("Server is running... \n   port:"+PORT+"\nhttp://10.0.0.175:"+PORT)
     
 })
 
